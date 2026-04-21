@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="canonical" href="https://mpautomechanics.com/">
-  <meta name="robots" content="index, follow">
+<meta name="theme-color" content="#ff4b4b">
+<script>
+document.querySelector('link[rel="canonical"]').href = window.location.href;
+</script>
+<meta name="robots" content="index, follow">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MP Auto Mechanics | Auto Electrician Melbourne | Car Electrical Services</title>
@@ -338,10 +341,10 @@ iframe {
     <!-- DESKTOP MENU -->
     <div class="nav-links">
         <a href="https://mpautomechanics.com/" target="_self">Home</a>
-        <a href="https://mpautomechanics.com/About" target="_self">About</a>
-        <a href="https://mpautomechanics.com/Profile" target="_self">Profile</a>
-        <a href="https://mpautomechanics.com/Services" target="_self">Services</a>
-        <a href="https://mpautomechanics.com/Contact" target="_self">Contact</a>
+        <a href="https://mpautomechanics.com/about" target="_self">About</a>
+        <a href="https://mpautomechanics.com/profile" target="_self">Profile</a>
+        <a href="https://mpautomechanics.com/services" target="_self">Services</a>
+        <a href="https://mpautomechanics.com/contact" target="_self">Contact</a>
     </div>
     <!-- CONTACT INFO -->
     <div class="nav-contact">
@@ -358,10 +361,10 @@ iframe {
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
     <a href="https://mpautomechanics.com/" target="_self">Home</a>
-    <a href="https://mpautomechanics.com/About" target="_self">About</a>
-    <a href="https://mpautomechanics.com/Profile" target="_self">Profile</a>
-    <a href="https://mpautomechanics.com/Services" target="_self">Services</a>
-    <a href="https://mpautomechanics.com/Contact" target="_self">Contact</a>
+    <a href="https://mpautomechanics.com/about" target="_self">About</a>
+    <a href="https://mpautomechanics.com/profile" target="_self">Profile</a>
+    <a href="https://mpautomechanics.com/services" target="_self">Services</a>
+    <a href="https://mpautomechanics.com/contact" target="_self">Contact</a>
 
     <hr>
 
@@ -418,7 +421,7 @@ width="100%" height="300" style="border:0;">
     <div class="card">
 <h3>Need Help with Your Car?</h3>
 <p>Book your service now or request a call back from our expert auto electrician.</p>
-<a href="https://service.mpautomechanics.com/?page=Contact" class="btn">Request Service</a>
+<a href="https://mpautomechanics.com/contact" class="btn">Request Service</a>
 </div>
 </div>
 <script>
@@ -462,23 +465,18 @@ window.addEventListener("load", function() {
 });
 </script>
 <script>
-document.querySelector(".hamburger").addEventListener("click", function() {
-    document.getElementById("mobileMenu").classList.toggle("active");
-});
-</script>
-<script>
 const path = window.location.pathname;
 
-if (path === "/About") {
+if (path === "/about") {
     window.location.href = "https://service.mpautomechanics.com/?page=About";
 }
-if (path === "/Services") {
+if (path === "/services") {
     window.location.href = "https://service.mpautomechanics.com/?page=Services";
 }
-if (path === "/Contact") {
+if (path === "/contact") {
     window.location.href = "https://service.mpautomechanics.com/?page=Contact";
 }
-if (path === "/Profile") {
+if (path === "/profile") {
     window.location.href = "https://service.mpautomechanics.com/?page=Profile";
 }
 </script>
