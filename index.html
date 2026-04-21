@@ -334,10 +334,10 @@ iframe {
     </div>
     <!-- DESKTOP MENU -->
     <div class="nav-links">
-        <a href="/about">About</a>
-        <a href="/services">Services</a>
-        <a href="/contact">Contact</a>
-        <a href="/profile">Profile</a>
+        <a href="/about" onclick="loadPage('About'); return false;">About</a>
+        <a href="/services" onclick="loadPage('Services'); return false;">Services</a>
+        <a href="/contact" onclick="loadPage('Contact'); return false;">Contact</a>
+        <a href="/profile" onclick="loadPage('Profile'); return false;">Profile</a>
         <!--<a href="https://mpautomechanics.com/" target="_self">Home</a>
         <a href="https://mpautomechanics.com/about" target="_self">About</a>
         <a href="https://mpautomechanics.com/profile" target="_self">Profile</a>
@@ -358,10 +358,10 @@ iframe {
 </div>
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
-    <a href="/about">About</a>
-    <a href="/services">Services</a>
-    <a href="/contact">Contact</a>
-    <a href="/profile">Profile</a>
+    <a href="/about" onclick="loadPage('About'); return false;">About</a>
+    <a href="/services" onclick="loadPage('Services'); return false;">Services</a>
+    <a href="/contact" onclick="loadPage('Contact'); return false;">Contact</a>
+    <a href="/profile" onclick="loadPage('Profile'); return false;">Profile</a>
     <!--<a href="https://mpautomechanics.com/" target="_self">Home</a>
     <a href="https://mpautomechanics.com/about" target="_self">About</a>
     <a href="https://mpautomechanics.com/profile" target="_self">Profile</a>
@@ -375,6 +375,8 @@ iframe {
         📧 malinimercy@ymail.com
     </p>
 </div>
+<div id="appContent"></div>
+<div id="homeContent">
 <!-- HERO -->
   <div class="hero">
     <div class="hero-text">
@@ -434,7 +436,6 @@ function toggleMenu() {
 <div id="loader">
     <div class="spinner"></div>
 </div>
-
 <style>
 #loader {
     position: fixed;
@@ -461,19 +462,33 @@ function toggleMenu() {
 }
 </style>
 <script>
+function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("active");
+}
+
+function loadPage(page) {
+    window.history.pushState({}, "", "/" + page.toLowerCase());
+    const container = document.getElementById("appContent");
+    if (page.toLowerCase() === "home") {
+        container.innerHTML = document.getElementById("homeContent").innerHTML;
+    } else {
+        container.innerHTML = `
+            <iframe 
+                src="https://service.mpautomechanics.com/?page=${page}"
+                style="width:100%; height:100vh; border:none;">
+            </iframe>
+        `;
+    }
+}
+
+/* Handle URL */
 const path = window.location.pathname.toLowerCase();
-if (path === "/about") {
-    window.location.href = "https://service.mpautomechanics.com/?page=About";
-}
-if (path === "/services") {
-    window.location.href = "https://service.mpautomechanics.com/?page=Services";
-}
-if (path === "/contact") {
-    window.location.href = "https://service.mpautomechanics.com/?page=Contact";
-}
-if (path === "/profile") {
-    window.location.href = "https://service.mpautomechanics.com/?page=Profile";
-}
+
+if (path === "/about") loadPage("About");
+else if (path === "/services") loadPage("Services");
+else if (path === "/contact") loadPage("Contact");
+else if (path === "/profile") loadPage("Profile");
+else loadPage("Home");
 </script>
 </body>
 </html>
