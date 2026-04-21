@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
 <meta name="theme-color" content="#ff4b4b">
-<script>
-document.querySelector('link[rel="canonical"]').href = window.location.href;
-</script>
+<link rel="canonical" href="https://mpautomechanics.com/">
 <meta name="robots" content="index, follow">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -220,11 +218,6 @@ body {
 .hero-text p {
     font-size: 18px;
     opacity: 0.9;
-}
-#mobileMenu {
-    display: none;
-    padding: 8px;
-    border-radius: 8px;
 }
 /* ===== BUTTON ===== */
 .btn {
@@ -467,13 +460,7 @@ function toggleMenu() {
 }
 </style>
 <script>
-window.addEventListener("load", function() {
-    const loader = document.getElementById("loader");
-    if (loader) loader.style.display = "none";
-});
-</script>
-<script>
-
+const path = window.location.pathname.toLowerCase();
 if (path === "/about") {
     window.location.href = "https://service.mpautomechanics.com/?page=About";
 }
