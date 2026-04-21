@@ -7,15 +7,18 @@
 </url>
 
 <url>
-  <loc>https://mpautomechanics.com/about</loc>
+  <loc>https://mpautomechanics.com/About</loc>
 </url>
 
 <url>
-  <loc>https://mpautomechanics.com/services</loc>
+  <loc>https://mpautomechanics.com/Services</loc>
 </url>
 
 <url>
-  <loc>https://mpautomechanics.com/contact</loc>
+  <loc>https://mpautomechanics.com/Contact</loc>
+</url>
+<url>
+  <loc>https://mpautomechanics.com/Profile</loc>
 </url>
 
 </urlset>
