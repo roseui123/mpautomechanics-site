@@ -323,6 +323,9 @@ iframe {
         padding: 15px;
     }
 }
+#homeContent {
+    display: none;
+}
 </style>
 </head>
 <body>
@@ -375,7 +378,6 @@ iframe {
         📧 malinimercy@ymail.com
     </p>
 </div>
-<div id="appContent"></div>
 <div id="homeContent">
 <!-- HERO -->
   <div class="hero">
@@ -436,6 +438,7 @@ function toggleMenu() {
 <div id="loader">
     <div class="spinner"></div>
 </div>
+<div id="appContent"></div>
 <style>
 #loader {
     position: fixed;
@@ -467,11 +470,16 @@ function toggleMenu() {
 }
 
 function loadPage(page) {
-    window.history.pushState({}, "", "/" + page.toLowerCase());
     const container = document.getElementById("appContent");
+    const home = document.getElementById("homeContent");
+
+    if (!container || !home) return;
+
     if (page.toLowerCase() === "home") {
-        container.innerHTML = document.getElementById("homeContent").innerHTML;
+        home.style.display = "block";
+        container.innerHTML = "";
     } else {
+        home.style.display = "none";
         container.innerHTML = `
             <iframe 
                 src="https://service.mpautomechanics.com/?page=${page}"
@@ -479,8 +487,9 @@ function loadPage(page) {
             </iframe>
         `;
     }
-}
 
+    window.history.pushState({}, "", "/" + page.toLowerCase());
+}
 /* Handle URL */
 const path = window.location.pathname.toLowerCase();
 
