@@ -324,7 +324,7 @@ iframe {
     }
 }
 #homeContent {
-    display: none;
+    display: block;
 }
 </style>
 </head>
@@ -475,13 +475,11 @@ function loadPage(page) {
 
     if (!container || !home) return;
 
-    // Hide everything first
-    home.style.display = "none";
-    container.innerHTML = "";
-
     if (page.toLowerCase() === "home") {
         home.style.display = "block";
+        container.innerHTML = "";
     } else {
+        home.style.display = "none";
         container.innerHTML = `
             <iframe 
                 src="https://service.mpautomechanics.com/?page=${page}"
@@ -492,7 +490,8 @@ function loadPage(page) {
 
     window.history.pushState({}, "", "/" + page.toLowerCase());
 }
-/* Handle URL */
+
+// ✅ IMPORTANT: Run after page loads
 window.onload = function () {
     const path = window.location.pathname.toLowerCase();
 
