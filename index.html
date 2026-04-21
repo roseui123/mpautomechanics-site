@@ -332,10 +332,10 @@ iframe {
     <!-- DESKTOP MENU -->
     <div class="nav-links">
         <a href="https://mpautomechanics.com/" target="_self">Home</a>
-        <a href="https://app.mpautomechanics.com/?page=About" target="_self">About</a>
-        <a href="https:/app.mpautomechanics.com/?page=Profile" target="_self">Profile</a>
-        <a href="https://app.mpautomechanics.com/?page=Services" target="_self">Services</a>
-        <a href="https://app.mpautomechanics.com/?page=Contact" target="_self">Contact</a>
+        <a href="https://service.mpautomechanics.com/?page=About" target="_self">About</a>
+        <a href="https:/service.mpautomechanics.com/?page=Profile" target="_self">Profile</a>
+        <a href="https://service.mpautomechanics.com/?page=Services" target="_self">Services</a>
+        <a href="https://service.mpautomechanics.com/?page=Contact" target="_self">Contact</a>
     </div>
     <!-- CONTACT INFO -->
     <div class="nav-contact">
@@ -352,10 +352,10 @@ iframe {
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
     <a href="https://mpautomechanics.com/" target="_self">Home</a>
-    <a href="https://app.mpautomechanics.com/?page=About" target="_self">About</a>
-    <a href="https://app.mpautomechanics.com/?page=Profile" target="_self">Profile</a>
-    <a href="https://app.mpautomechanics.com/?page=Services" target="_self">Services</a>
-    <a href="https://app.mpautomechanics.com/?page=Contact" target="_self">Contact</a>
+    <a href="https://service.mpautomechanics.com/?page=About" target="_self">About</a>
+    <a href="https://service.mpautomechanics.com/?page=Profile" target="_self">Profile</a>
+    <a href="https://service.mpautomechanics.com/?page=Services" target="_self">Services</a>
+    <a href="https://service.mpautomechanics.com/?page=Contact" target="_self">Contact</a>
 
     <hr>
 
@@ -449,10 +449,10 @@ function toggleMenu() {
     100% { transform: rotate(360deg); }
 }
 </style>
-
 <script>
 window.addEventListener("load", function() {
-    document.getElementById("loader").style.display = "none";
+    const loader = document.getElementById("loader");
+    if (loader) loader.style.display = "none";
 });
 </script>
 <script>
