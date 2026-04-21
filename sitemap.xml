@@ -3,18 +3,19 @@
 
 <url>
   <loc>https://mpautomechanics.com/</loc>
+  <priority>1.0</priority>
 </url>
 
 <url>
-  <loc>https://service.mpautomechanics.com/?page=About</loc>
+  <loc>https://mpautomechanics.com/about</loc>
 </url>
 
 <url>
-  <loc>https://service.mpautomechanics.com/?page=Services</loc>
+  <loc>https://mpautomechanics.com/services</loc>
 </url>
 
 <url>
-  <loc>https://service.mpautomechanics.com/?page=Contact</loc>
+  <loc>https://mpautomechanics.com/contact</loc>
 </url>
 
 </urlset>
