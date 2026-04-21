@@ -338,10 +338,10 @@ iframe {
     <!-- DESKTOP MENU -->
     <div class="nav-links">
         <a href="https://mpautomechanics.com/" target="_self">Home</a>
-        <a href="https://service.mpautomechanics.com/?page=About" target="_self">About</a>
-        <a href="https:/service.mpautomechanics.com/?page=Profile" target="_self">Profile</a>
-        <a href="https://service.mpautomechanics.com/?page=Services" target="_self">Services</a>
-        <a href="https://service.mpautomechanics.com/?page=Contact" target="_self">Contact</a>
+        <a href="https://mpautomechanics.com/About" target="_self">About</a>
+        <a href="https://mpautomechanics.com/Profile" target="_self">Profile</a>
+        <a href="https://mpautomechanics.com/Services" target="_self">Services</a>
+        <a href="https://mpautomechanics.com/Contact" target="_self">Contact</a>
     </div>
     <!-- CONTACT INFO -->
     <div class="nav-contact">
@@ -358,10 +358,10 @@ iframe {
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
     <a href="https://mpautomechanics.com/" target="_self">Home</a>
-    <a href="https://service.mpautomechanics.com/?page=About" target="_self">About</a>
-    <a href="https://service.mpautomechanics.com/?page=Profile" target="_self">Profile</a>
-    <a href="https://service.mpautomechanics.com/?page=Services" target="_self">Services</a>
-    <a href="https://service.mpautomechanics.com/?page=Contact" target="_self">Contact</a>
+    <a href="https://mpautomechanics.com/About" target="_self">About</a>
+    <a href="https://mpautomechanics.com/Profile" target="_self">Profile</a>
+    <a href="https://mpautomechanics.com/Services" target="_self">Services</a>
+    <a href="https://mpautomechanics.com/Contact" target="_self">Contact</a>
 
     <hr>
 
@@ -465,6 +465,22 @@ window.addEventListener("load", function() {
 document.querySelector(".hamburger").addEventListener("click", function() {
     document.getElementById("mobileMenu").classList.toggle("active");
 });
+</script>
+<script>
+const path = window.location.pathname;
+
+if (path === "/About") {
+    window.location.href = "https://service.mpautomechanics.com/?page=About";
+}
+if (path === "/Services") {
+    window.location.href = "https://service.mpautomechanics.com/?page=Services";
+}
+if (path === "/Contact") {
+    window.location.href = "https://service.mpautomechanics.com/?page=Contact";
+}
+if (path === "/Profile") {
+    window.location.href = "https://service.mpautomechanics.com/?page=Profile";
+}
 </script>
 </body>
 </html>
