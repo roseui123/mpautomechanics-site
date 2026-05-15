@@ -8,13 +8,18 @@ CORS(app)
 
 API_KEY = os.getenv("MAILERSEND_API_KEY")
 
-@app.route("/")
 
+# =========================================
+# HOME ROUTE
+# =========================================
+@app.route("/")
 def home():
     return "MP Auto Mechanics backend running"
 
-@app.route("/send-email", methods=["POST"])
 
+# =========================================
+# TEST ROUTE
+# =========================================
 @app.route("/test")
 def test():
     return {
@@ -22,75 +27,102 @@ def test():
         "api_key_length": len(API_KEY) if API_KEY else 0
     }
 
-@app.route("/send-email", methods=["POST"])
-def send_email():
 
-    try:
-        data = request.json
+# =========================================
+# SEND EMAIL FUNCTION
+# =========================================
+def send_email(name, work, contact_method, contact):
 
-        print("Received:", data)
+    url = "https://api.mailersend.com/v1/email"
 
-        name = data.get("name")
-        work = data.get("work")
-        contact_method = data.get("contact_method")
-        contact = data.get("contact")
+    headers = {
+        "Authorization": f"Bearer {API_KEY}",
+        "Content-Type": "application/json"
+    }
 
-        url = "https://api.mailersend.com/v1/email"
+    payload = {
+        "from": {
+            "email": "info@mpautomechanics.com",
+            "name": "MP Auto Mechanics"
+        },
 
-        headers = {
-            "Authorization": f"Bearer {API_KEY}",
-            "Content-Type": "application/json"
-        }
+        "to": [
+            {
+                "email": "mpautoelectrics@gmail.com",
+                "name": "Admin"
+            }
+        ],
 
-        payload = {
-            "from": {
-                "email": "info@mpautomechanics.com",
-                "name": "MP Auto Mechanics"
-            },
-            "to": [
-                {
-                    "email": "mpautoelectrics@gmail.com",
-                    "name": "Admin"
-                }
-            ],
-            "subject": "New Customer Request",
+        "subject": "New Customer Request",
 
-            "text": f"""
+        "text": f"""
 Customer Name: {name}
 Work Details: {work}
 Contact Method: {contact_method}
 Contact Info: {contact}
 """,
 
-            "html": f"""
+        "html": f"""
 <h2>New Customer Request</h2>
+
 <p><b>Name:</b> {name}</p>
+
 <p><b>Work:</b> {work}</p>
+
 <p><b>Contact Method:</b> {contact_method}</p>
+
 <p><b>Contact Info:</b> {contact}</p>
 """
-        }
+    }
 
-        response = requests.post(
-            url,
-            headers=headers,
-            json=payload
+    response = requests.post(
+        url,
+        headers=headers,
+        json=payload
+    )
+
+    print("MAILERSEND STATUS:", response.status_code)
+    print("MAILERSEND RESPONSE:", response.text)
+
+    if response.status_code in [200, 202]:
+        return True
+
+    return False
+
+
+# =========================================
+# SEND EMAIL ROUTE
+# =========================================
+@app.route("/send-email", methods=["POST"])
+def send_email_route():
+
+    try:
+
+        data = request.get_json()
+
+        print("RECEIVED DATA:", data)
+
+        success = send_email(
+            data["name"],
+            data["work"],
+            data["contact_method"],
+            data["contact"]
         )
 
-        print("STATUS:", response.status_code)
-        print("RESPONSE:", response.text)
+        if success:
 
-        if response.status_code in [200, 202]:
             return jsonify({
                 "success": True
             })
 
-        return jsonify({
-            "success": False,
-            "error": response.text
-        }), 500
+        else:
+
+            return jsonify({
+                "success": False
+            }), 500
 
     except Exception as e:
+
         print("ERROR:", str(e))
 
         return jsonify({
@@ -98,5 +130,9 @@ Contact Info: {contact}
             "error": str(e)
         }), 500
 
+
+# =========================================
+# RUN APP
+# =========================================
 if __name__ == "__main__":
     app.run()
