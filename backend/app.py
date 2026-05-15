@@ -9,10 +9,19 @@ CORS(app)
 API_KEY = os.getenv("MAILERSEND_API_KEY")
 
 @app.route("/")
+
 def home():
     return "MP Auto Mechanics backend running"
 
 @app.route("/send-email", methods=["POST"])
+
+@app.route("/test")
+def test():
+    return {
+        "api_key_exists": API_KEY is not None,
+        "api_key_length": len(API_KEY) if API_KEY else 0
+    }
+
 def send_email():
 
     data = request.get_json()
