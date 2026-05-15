@@ -141,7 +141,34 @@ body{
 }
 
 }
+/*FOOTER*/
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
 
+    background:rgba(255,255,255,0.75);
+    backdrop-filter:blur(10px);
+
+    font-size:14px;
+
+    border-top:1px solid rgba(0,0,0,0.08);
+}
+
+footer a{
+    color:#ff4b4b;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+@media (prefers-color-scheme: dark){
+
+    footer{
+        background:rgba(15,23,42,0.9);
+        border-top:1px solid #1e293b;
+        color:#e2e8f0;
+    }
+}
 /* HAMBURGER */
 
 .hamburger{
