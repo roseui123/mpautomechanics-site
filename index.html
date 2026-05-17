@@ -313,15 +313,39 @@ body{
 }
 
 .images{
-    display:flex;
-    flex-wrap:wrap;
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(220px,1fr));
+
     gap:15px;
+
+    margin-top:20px;
+
 }
 
 .images img{
+
     width:100%;
-    max-width:300px;
+
+    height:180px;
+
+    object-fit:cover;
+
     border-radius:15px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+
+    transition:0.3s ease;
+
+}
+
+.images img:hover{
+
+    transform:translateY(-3px);
+
 }
 
 iframe{
@@ -558,15 +582,6 @@ footer a{
         <h3>
         Melbourne Service Areas
         </h3>
-        <img 
-
-            src="/images/HeadUnit_installation.jpg"
-
-            alt="Car head unit installation and infotainment upgrade service"
-
-            loading="lazy"
-
-        >
         <p>
         We provide mobile auto electrical services throughout Melbourne
         including Cranbourne, Berwick, Dandenong,
@@ -580,17 +595,21 @@ footer a{
         <h3>
         Vehicle Diagnostics and Fault Detection
         </h3>
-        <img src="/images/Audi_BrakeChange.jpg"
-
-            alt="Audi brake change and brake service repair in Melbourne"
-
-            loading="lazy"
-        <p>
+        
         Advanced diagnostics equipment helps identify
         hidden vehicle electrical faults quickly and accurately.
         We inspect charging systems, battery condition,
         starter motors and wiring systems to locate the issue.
         </p>
+        <img 
+
+            src="/images/HeadUnit_installation.jpg"
+
+            alt="Car head unit installation and infotainment upgrade service"
+
+            loading="lazy"
+
+        >
 
     </div>
 
