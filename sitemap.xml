@@ -1,34 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
-  <loc>https://mpautomechanics.com/</loc>
-  <priority>1.0</priority>
-</url>
+  <url>
+    <loc>https://mpautomechanics.com/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
 
-<url>
-  <loc>https://mpautomechanics.com/about</loc>
-  <priority>0.9</priority>
-</url>
+  <url>
+    <loc>https://mpautomechanics.com/about.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
-<url>
-  <loc>https://mpautomechanics.com/services</loc>
-  <priority>0.9</priority>
-</url>
+  <url>
+    <loc>https://mpautomechanics.com/services.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
-<url>
-  <loc>https://mpautomechanics.com/contact</loc>
-  <priority>0.8</priority>
-</url>
+  <url>
+    <loc>https://mpautomechanics.com/contact.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-<url>
-  <loc>https://mpautomechanics.com/profile</loc>
-  <priority>0.8</priority>
-</url>
+  <url>
+    <loc>https://mpautomechanics.com/profile.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-<url>
-  <loc>https://mpautomechanics.com/privacy</loc>
-  <priority>0.5</priority>
-</url>
+  <url>
+    <loc>https://mpautomechanics.com/privacy.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+
+
+  <url>
+    <loc>https://mpautomechanics.com/services/battery-replacement.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mpautomechanics.com/services/alternator-repair.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mpautomechanics.com/services/diagnostics.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mpautomechanics.com/services/starter-motor.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mpautomechanics.com/services/wiring-repair.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mpautomechanics.com/services/breakdown-service.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mpautomechanics.com/services/lighting-repair.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
 </urlset>
