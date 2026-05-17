@@ -2,21 +2,53 @@
 <html lang="en">
 <head>
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2942881557430221"
+     crossorigin="anonymous"></script>
+
+<link rel="icon" href="/favicon.ico?v=5">
+
+<meta name="theme-color" content="#ff4b4b">
+<meta name="robots" content="index, follow">
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Auto Electrical Services Melbourne | MP Auto Mechanics</title>
 
 <meta name="description"
-content="Professional auto electrical services in Melbourne including battery replacement, diagnostics, alternator repair, starter motor repairs and mobile breakdown assistance.">
+content="Professional auto electrical services in Melbourne including battery replacement, diagnostics, alternator repairs, starter motor repairs, wiring repairs and roadside assistance.">
 
-<link rel="canonical" href="https://mpautomechanics.com/services">
+<meta name="keywords"
+content="auto electrical services Melbourne, battery replacement Melbourne, alternator repair Melbourne, vehicle diagnostics Melbourne, mobile auto electrician Melbourne">
 
-<link rel="icon" href="/favicon.ico?v=5">
+<link rel="canonical"
+href="https://mpautomechanics.com/services">
+
+<!-- GOOGLE SCHEMA -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "MP Auto Mechanics",
+  "image": "https://mpautomechanics.com/images/logo.jpg",
+  "telephone": "+61403345586",
+  "email": "mpautoelectrics@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Melbourne",
+    "addressRegion": "VIC",
+    "addressCountry": "AU"
+  },
+  "areaServed": "Melbourne",
+  "url": "https://mpautomechanics.com",
+  "description": "Professional mobile auto electrician in Melbourne offering diagnostics, battery replacement, alternator repair and wiring solutions."
+}
+</script>
 
 <style>
 
-/* ===== SAME STYLE AS INDEX.HTML ===== */
+/* ===== RESET ===== */
 
 *{
     margin:0;
@@ -29,7 +61,10 @@ body{
     background:#ffffff;
     color:#0f172a;
     line-height:1.7;
+    transition:all 0.3s ease;
 }
+
+/* ===== DARK MODE ===== */
 
 @media (prefers-color-scheme: dark){
 
@@ -38,6 +73,8 @@ body{
         color:#e2e8f0;
     }
 }
+
+/* ===== NAVBAR ===== */
 
 .navbar{
     position:sticky;
@@ -54,18 +91,39 @@ body{
     backdrop-filter:blur(12px);
 
     box-shadow:0px 5px 25px rgba(0,0,0,0.08);
+    border-radius:0 0 15px 15px;
 }
+
+@media (prefers-color-scheme: dark){
+
+    .navbar{
+        background:rgba(2,6,23,0.8);
+    }
+}
+
+/* ===== LOGO ===== */
 
 .logo img{
     width:50px;
     border-radius:10px;
 }
 
+/* ===== NAV LINKS ===== */
+
 .nav-links a{
     margin:0 12px;
     text-decoration:none;
     font-weight:600;
     color:#0f172a;
+    padding:8px 14px;
+    border-radius:10px;
+    transition:all 0.3s ease;
+}
+
+.nav-links a:hover{
+    background:#ff4b4b;
+    color:white;
+    transform:translateY(-2px);
 }
 
 @media (prefers-color-scheme: dark){
@@ -75,26 +133,132 @@ body{
     }
 }
 
+/* ===== CONTACT ===== */
+
+.nav-contact{
+    font-size:13px;
+    text-align:right;
+}
+
+@media (max-width:768px){
+
+    .nav-contact{
+        display:none;
+    }
+}
+
+/* ===== HAMBURGER ===== */
+
+.hamburger{
+    display:none;
+    flex-direction:column;
+    cursor:pointer;
+}
+
+.hamburger span{
+    height:3px;
+    width:25px;
+    background:#0f172a;
+    margin:4px;
+    border-radius:5px;
+}
+
+@media (prefers-color-scheme: dark){
+
+    .hamburger span{
+        background:white;
+    }
+}
+
+/* ===== MOBILE MENU ===== */
+
+.mobile-menu{
+    position:fixed;
+    top:70px;
+    right:-100%;
+
+    width:220px;
+
+    z-index:10000;
+
+    background:rgba(255,255,255,0.95);
+    backdrop-filter:blur(10px);
+
+    box-shadow:-5px 0px 20px rgba(0,0,0,0.2);
+
+    border-radius:15px 0 0 15px;
+
+    padding:20px;
+
+    transition:0.4s ease;
+}
+
+.mobile-menu.active{
+    right:0;
+}
+
+.mobile-menu a{
+    display:block;
+    margin:15px 0;
+    text-decoration:none;
+    font-weight:bold;
+    color:#0f172a;
+}
+
+@media (prefers-color-scheme: dark){
+
+    .mobile-menu{
+        background:rgba(2,6,23,0.95);
+    }
+
+    .mobile-menu a{
+        color:white;
+    }
+}
+
+@media (max-width:768px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hamburger{
+        display:flex;
+    }
+}
+
+/* ===== HERO ===== */
+
 .hero{
-    height:350px;
-    margin:20px;
+    z-index:1;
+    position:relative;
+
+    height:420px;
+
     border-radius:20px;
+    margin:20px;
+
+    overflow:hidden;
 
     background:
     linear-gradient(
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.3)
+        to top,
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.1)
     ),
     url('/images/Banner_Car_image.png') center/cover no-repeat;
 
     display:flex;
     align-items:center;
+
     padding:40px;
 }
 
 .hero-text{
-    color:white;
     max-width:650px;
+    color:white;
+
+    animation:fadeUp 1s ease;
 }
 
 .hero-text h1{
@@ -102,17 +266,61 @@ body{
     margin-bottom:15px;
 }
 
+.hero-text p{
+    font-size:18px;
+    opacity:0.95;
+}
+
+/* ===== BUTTON ===== */
+
+.btn{
+    display:inline-block;
+
+    margin-top:18px;
+
+    padding:14px 26px;
+
+    border-radius:12px;
+
+    background:#ff4b4b;
+    color:white;
+
+    font-weight:bold;
+    text-decoration:none;
+
+    transition:all 0.3s ease;
+}
+
+.btn:hover{
+    background:#e63939;
+    transform:scale(1.05);
+    box-shadow:0 10px 25px rgba(255,75,75,0.4);
+}
+
+/* ===== CONTAINER ===== */
+
 .container{
     padding:30px;
 }
 
+/* ===== CARD ===== */
+
 .card{
     background:white;
+
     padding:30px;
+
     border-radius:18px;
+
     margin-bottom:25px;
 
     box-shadow:0px 10px 30px rgba(0,0,0,0.08);
+
+    transition:all 0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-5px);
 }
 
 @media (prefers-color-scheme: dark){
@@ -122,24 +330,7 @@ body{
     }
 }
 
-.btn{
-    display:inline-block;
-    margin-top:20px;
-    padding:14px 24px;
-
-    background:#ff4b4b;
-    color:white;
-
-    text-decoration:none;
-    border-radius:12px;
-    font-weight:bold;
-
-    transition:0.3s ease;
-}
-
-.btn:hover{
-    background:#e63939;
-}
+/* ===== SERVICES GRID ===== */
 
 .services-grid{
     display:grid;
@@ -147,13 +338,17 @@ body{
     gap:25px;
 }
 
+/* ===== FOOTER ===== */
+
 footer{
     text-align:center;
-    padding:25px;
+    padding:20px;
     margin-top:40px;
 
     background:rgba(255,255,255,0.75);
     backdrop-filter:blur(10px);
+
+    font-size:14px;
 
     border-top:1px solid rgba(0,0,0,0.08);
 }
@@ -167,8 +362,46 @@ footer a{
 @media (prefers-color-scheme: dark){
 
     footer{
-        background:#0f172a;
+        background:rgba(15,23,42,0.9);
+        border-top:1px solid #1e293b;
         color:#e2e8f0;
+    }
+}
+
+/* ===== ANIMATION ===== */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width:768px){
+
+    .hero{
+        height:300px;
+        padding:20px;
+    }
+
+    .hero-text h1{
+        font-size:28px;
+    }
+
+    .hero-text p{
+        font-size:15px;
+    }
+
+    .container{
+        padding:15px;
     }
 }
 
@@ -177,60 +410,105 @@ footer a{
 
 <body>
 
-<!-- NAVBAR -->
+<!-- ===== NAVBAR ===== -->
 
 <div class="navbar">
 
-<div class="logo">
-<a href="/">
-<img src="/images/logo.jpg" alt="MP Auto Mechanics Logo">
-</a>
+    <div class="logo">
+        <a href="/">
+            <img src="/images/logo.jpg"
+            alt="MP Auto Mechanics Logo">
+        </a>
+    </div>
+
+    <div class="nav-links">
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/contact">Contact</a>
+        <a href="/profile">Profile</a>
+        <a href="/privacy">Privacy Policy</a>
+    </div>
+
+    <div class="nav-contact">
+        📧 mpautoelectrics@gmail.com<br>
+        📧 Contact Developer: malinimercy@ymail.com
+    </div>
+
+    <div class="hamburger"
+    onclick="toggleMenu()">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
 </div>
 
-<div class="nav-links">
-<a href="/">Home</a>
-<a href="/about">About</a>
-<a href="/services">Services</a>
-<a href="/profile">Profile</a>
-<a href="/contact">Contact</a>
-<a href="/privacy">Privacy</a>
-</div>
+<!-- ===== MOBILE MENU ===== -->
+
+<div class="mobile-menu"
+id="mobileMenu">
+
+    <a href="/about">About</a>
+    <a href="/services">Services</a>
+    <a href="/contact">Contact</a>
+    <a href="/profile">Profile</a>
+    <a href="/privacy">Privacy Policy</a>
+
+    <hr>
+
+    <p style="font-size:14px;">
+        📧 mpautoelectrics@gmail.com<br>
+        📧 malinimercy@ymail.com
+    </p>
 
 </div>
 
-<!-- HERO -->
+<!-- ===== HERO ===== -->
 
 <div class="hero">
 
-<div class="hero-text">
+    <div class="hero-text">
 
-<h1>Professional Auto Electrical Services</h1>
+        <h1>Professional Auto Electrical Services</h1>
 
-<p>
-MP Auto Mechanics provides reliable mobile auto electrical services across Melbourne including diagnostics, battery replacement, wiring repairs and emergency breakdown assistance.
-</p>
+        <p>
+        Reliable mobile auto electrical services across Melbourne including diagnostics, battery replacement, alternator repairs and emergency roadside assistance.
+        </p>
+
+        <a href="/contact"
+        class="btn">
+
+        Request Service
+
+        </a>
+
+    </div>
 
 </div>
 
-</div>
-
-<!-- CONTENT -->
+<!-- ===== CONTENT ===== -->
 
 <div class="container">
 
 <div class="card">
 
-<h2>Complete Mobile Auto Electrical Solutions</h2>
+<h2>Complete Auto Electrical Solutions in Melbourne</h2>
 
 <p>
-Modern vehicles rely heavily on advanced electronic systems and components. Our experienced technicians provide professional diagnostics and repairs for all major automotive electrical systems including charging systems, ignition systems, lighting systems, battery faults and ECU diagnostics.
+MP Auto Mechanics provides professional vehicle electrical services for cars, SUVs, vans and commercial vehicles across Melbourne suburbs. We specialise in diagnostics, battery replacement, wiring repairs, charging system repairs and advanced electrical fault detection.
 </p>
 
+<br>
+
 <p>
-We service customers across Melbourne with fast mobile assistance, advanced diagnostic equipment and more than 20 years of automotive repair experience.
+Modern vehicles depend heavily on electronic systems and onboard computers. Our experienced technicians use professional diagnostic equipment to identify electrical faults accurately and provide reliable repairs.
 </p>
 
 </div>
+
+<!-- ===== SERVICES ===== -->
 
 <div class="services-grid">
 
@@ -241,11 +519,14 @@ We service customers across Melbourne with fast mobile assistance, advanced diag
 <h2>Battery Replacement</h2>
 
 <p>
-Professional car battery testing and replacement services for vehicles experiencing slow starts, battery drain issues or charging faults.
+Professional battery testing and replacement services for vehicles with slow starts, battery drain or charging issues.
 </p>
 
-<a href="/services/battery-replacement.html" class="btn">
+<a href="/services/battery-replacement.html"
+class="btn">
+
 Learn More
+
 </a>
 
 </div>
@@ -254,14 +535,17 @@ Learn More
 
 <div class="card">
 
-<h2>Alternator Repair</h2>
+<h2>Alternator Repairs</h2>
 
 <p>
-Charging system diagnostics and alternator repairs for dim headlights, battery charging problems and warning lights.
+Charging system diagnostics and alternator repairs for battery charging problems, warning lights and electrical failures.
 </p>
 
-<a href="/services/alternator-repair.html" class="btn">
+<a href="/services/alternator-repair.html"
+class="btn">
+
 Learn More
+
 </a>
 
 </div>
@@ -273,11 +557,14 @@ Learn More
 <h2>Vehicle Diagnostics</h2>
 
 <p>
-Advanced ECU scanning and electrical fault detection using professional diagnostic equipment for modern vehicles.
+Advanced ECU diagnostics and fault code scanning for modern vehicles using professional automotive diagnostic tools.
 </p>
 
-<a href="/services/diagnostics.html" class="btn">
+<a href="/services/diagnostics.html"
+class="btn">
+
 Learn More
+
 </a>
 
 </div>
@@ -289,11 +576,14 @@ Learn More
 <h2>Starter Motor Repairs</h2>
 
 <p>
-Starter motor testing and repair services for vehicles that fail to crank or experience ignition issues.
+Starter motor testing and repairs for vehicles experiencing ignition problems or engine cranking issues.
 </p>
 
-<a href="/services/starter-motor.html" class="btn">
+<a href="/services/starter-motor.html"
+class="btn">
+
 Learn More
+
 </a>
 
 </div>
@@ -305,11 +595,14 @@ Learn More
 <h2>Wiring Repairs</h2>
 
 <p>
-Electrical wiring repairs including short circuits, damaged harnesses, trailer wiring and electrical fault tracing.
+Electrical wiring repairs including short circuits, damaged harnesses, lighting problems and trailer wiring solutions.
 </p>
 
-<a href="/services/wiring-repair.html" class="btn">
+<a href="/services/wiring-repair.html"
+class="btn">
+
 Learn More
+
 </a>
 
 </div>
@@ -318,14 +611,17 @@ Learn More
 
 <div class="card">
 
-<h2>Breakdown Assistance</h2>
+<h2>Roadside Breakdown Assistance</h2>
 
 <p>
-Emergency roadside auto electrical support across Melbourne for breakdowns, battery failures and starting problems.
+Fast roadside auto electrical assistance across Melbourne for battery failures, starting problems and emergency electrical faults.
 </p>
 
-<a href="/services/breakdown-service.html" class="btn">
+<a href="/services/breakdown-service.html"
+class="btn">
+
 Learn More
+
 </a>
 
 </div>
@@ -340,30 +636,76 @@ Learn More
 
 <ul style="padding-left:20px; margin-top:15px;">
 
-<li>20+ Years Industry Experience</li>
-<li>Professional Diagnostic Equipment</li>
+<li>20+ Years Experience</li>
 <li>Mobile Service Across Melbourne</li>
-<li>Fast Same-Day Assistance</li>
-<li>Affordable and Reliable Repairs</li>
+<li>Professional Diagnostics</li>
+<li>Affordable Pricing</li>
+<li>Reliable Same-Day Assistance</li>
 <li>Experienced Auto Electrical Technicians</li>
 
 </ul>
 
 </div>
 
+<!-- SERVICE AREAS -->
+
+<div class="card">
+
+<h2>Melbourne Service Areas</h2>
+
+<p>
+We provide mobile auto electrical services across Melbourne including Cranbourne, Dandenong, Narre Warren, Berwick, Frankston and surrounding suburbs.
+</p>
+
 </div>
 
-<!-- FOOTER -->
+<!-- CTA -->
+
+<div class="card">
+
+<h2>Need Professional Vehicle Repairs?</h2>
+
+<p>
+Contact MP Auto Mechanics today for reliable diagnostics, repairs and mobile auto electrical assistance across Melbourne.
+</p>
+
+<a href="/contact"
+class="btn">
+
+Contact Us
+
+</a>
+
+</div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
 
 <footer>
 
 © 2026 MP Auto Mechanics |
 
 <a href="/privacy">
+
 Privacy Policy
+
 </a>
 
 </footer>
+
+<!-- ===== JAVASCRIPT ===== -->
+
+<script>
+
+function toggleMenu(){
+
+    document
+    .getElementById("mobileMenu")
+    .classList.toggle("active");
+}
+
+</script>
 
 </body>
 </html>
