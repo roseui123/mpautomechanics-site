@@ -2,29 +2,53 @@
 <html lang="en">
 <head>
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-2942881557430221"
+<!-- Google AdSense -->
+<script async
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2942881557430221"
 crossorigin="anonymous"></script>
 
-    
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Contact MP Auto Mechanics | Auto Electrician Melbourne</title>
+<title>
+Contact MP Auto Mechanics | Auto Electrician Melbourne
+</title>
 
-<meta name="description"
-content="Contact MP Auto Mechanics for professional mobile auto electrical services across Melbourne.">
+<meta
+name="description"
+content="Contact MP Auto Mechanics for professional mobile auto electrical services across Melbourne including diagnostics, battery replacement, alternator repair and wiring repairs."
+>
+
+<meta
+name="keywords"
+content="contact auto electrician Melbourne, mobile auto electrician Melbourne, car electrical repair Melbourne"
+>
+
+<meta
+name="author"
+content="MP Auto Mechanics">
 
 <meta name="robots" content="index, follow">
 
-<link rel="canonical" href="https://mpautomechanics.com/contact">
+<link rel="canonical" href="https://mpautomechanics.com/contact.html">
 
 <link rel="icon" href="/favicon.ico?v=5">
 
 <meta name="theme-color" content="#ff4b4b">
 
+<!-- CONTACT PAGE SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ContactPage",
+  "url":"https://mpautomechanics.com/contact.html",
+  "name":"Contact MP Auto Mechanics"
+}
+</script>
+
 <style>
 
-/* ===== RESET ===== */
+/* RESET */
 
 *{
     margin:0;
@@ -36,10 +60,8 @@ body{
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
     background:#ffffff;
     color:#0f172a;
-    line-height:1.6;
+    line-height:1.7;
 }
-
-/* ===== DARK MODE ===== */
 
 @media (prefers-color-scheme: dark){
 
@@ -49,10 +71,9 @@ body{
     }
 }
 
-/* ===== NAVBAR ===== */
+/* NAVBAR */
 
 .navbar{
-
     position:sticky;
     top:0;
     z-index:9999;
@@ -63,10 +84,10 @@ body{
 
     padding:12px 25px;
 
-    background:rgba(255,255,255,0.75);
+    background:rgba(255,255,255,0.82);
     backdrop-filter:blur(12px);
 
-    box-shadow:0px 5px 25px rgba(0,0,0,0.08);
+    box-shadow:0 5px 25px rgba(0,0,0,0.08);
 
     border-radius:0 0 15px 15px;
 }
@@ -74,36 +95,26 @@ body{
 @media (prefers-color-scheme: dark){
 
     .navbar{
-        background:rgba(2,6,23,0.85);
+        background:rgba(2,6,23,0.9);
     }
 }
 
-/* ===== LOGO ===== */
-
 .logo img{
-    width:50px;
+    width:55px;
     border-radius:10px;
 }
 
-/* ===== NAV LINKS ===== */
-
 .nav-links a{
-
-    margin:0 12px;
-
+    margin:0 10px;
     text-decoration:none;
-    font-weight:600;
-
     color:#0f172a;
-
+    font-weight:600;
     padding:8px 14px;
     border-radius:10px;
-
-    transition:all 0.3s ease;
+    transition:0.3s ease;
 }
 
 .nav-links a:hover{
-
     background:#ff4b4b;
     color:white;
 }
@@ -114,8 +125,6 @@ body{
         color:#e2e8f0;
     }
 }
-
-/* ===== CONTACT ===== */
 
 .nav-contact{
     font-size:13px;
@@ -129,22 +138,18 @@ body{
     }
 }
 
-/* ===== HAMBURGER ===== */
+/* MOBILE */
 
 .hamburger{
-
     display:none;
     flex-direction:column;
     cursor:pointer;
 }
 
 .hamburger span{
-
-    height:3px;
     width:25px;
-
+    height:3px;
     background:#0f172a;
-
     margin:4px;
     border-radius:5px;
 }
@@ -156,26 +161,21 @@ body{
     }
 }
 
-/* ===== MOBILE MENU ===== */
-
 .mobile-menu{
-
     position:fixed;
-
     top:70px;
     right:-100%;
 
     width:220px;
 
-    background:rgba(255,255,255,0.95);
+    background:rgba(255,255,255,0.96);
+    backdrop-filter:blur(12px);
 
-    backdrop-filter:blur(10px);
-
-    box-shadow:-5px 0px 20px rgba(0,0,0,0.2);
+    padding:20px;
 
     border-radius:15px 0 0 15px;
 
-    padding:20px;
+    box-shadow:-5px 0 20px rgba(0,0,0,0.15);
 
     transition:0.4s ease;
 
@@ -187,13 +187,10 @@ body{
 }
 
 .mobile-menu a{
-
     display:block;
     margin:15px 0;
-
     text-decoration:none;
     font-weight:bold;
-
     color:#0f172a;
 }
 
@@ -208,8 +205,6 @@ body{
     }
 }
 
-/* ===== RESPONSIVE ===== */
-
 @media (max-width:768px){
 
     .nav-links{
@@ -221,22 +216,24 @@ body{
     }
 }
 
-/* ===== HERO ===== */
+/* HERO */
 
 .hero{
-
     height:320px;
 
-    border-radius:20px;
     margin:20px;
+    border-radius:20px;
+
+    overflow:hidden;
 
     background:
     linear-gradient(
         to top,
-        rgba(0,0,0,0.45),
-        rgba(0,0,0,0.2)
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.15)
     ),
-    url('/images/Banner_Car_image.png') center/cover no-repeat;
+    url('/images/Banner_Car_image.png')
+    center/cover no-repeat;
 
     display:flex;
     align-items:center;
@@ -245,28 +242,27 @@ body{
 }
 
 .hero-text{
+    max-width:650px;
     color:white;
 }
 
 .hero-text h1{
     font-size:42px;
-    margin-bottom:10px;
+    margin-bottom:15px;
 }
 
 .hero-text p{
     font-size:18px;
+    opacity:0.95;
 }
 
-/* ===== CONTAINER ===== */
+/* CONTENT */
 
 .container{
     padding:30px;
 }
 
-/* ===== CARD ===== */
-
 .card{
-
     background:white;
 
     padding:30px;
@@ -275,7 +271,12 @@ body{
 
     margin-bottom:25px;
 
-    box-shadow:0px 10px 30px rgba(0,0,0,0.08);
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    transition:0.3s ease;
 }
 
 @media (prefers-color-scheme: dark){
@@ -285,13 +286,11 @@ body{
     }
 }
 
-/* ===== FORM ===== */
+/* FORM */
 
 .contact-form{
-
     display:flex;
     flex-direction:column;
-
     gap:18px;
 }
 
@@ -311,9 +310,7 @@ body{
 }
 
 .contact-form textarea{
-
     min-height:140px;
-
     resize:vertical;
 }
 
@@ -330,10 +327,9 @@ body{
     }
 }
 
-/* ===== BUTTON ===== */
+/* BUTTON */
 
 .btn{
-
     display:inline-block;
 
     padding:14px 24px;
@@ -354,32 +350,29 @@ body{
 }
 
 .btn:hover{
-
     background:#e63939;
-
     transform:translateY(-2px);
 }
 
-/* ===== RESPONSE ===== */
+/* RESPONSE */
 
 #responseMessage{
-
     margin-top:20px;
-
     font-weight:bold;
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 
 footer{
     text-align:center;
-    padding:20px;
+
+    padding:25px;
+
     margin-top:40px;
 
-    background:rgba(255,255,255,0.75);
-    backdrop-filter:blur(10px);
+    background:rgba(255,255,255,0.82);
 
-    font-size:14px;
+    backdrop-filter:blur(10px);
 
     border-top:1px solid rgba(0,0,0,0.08);
 }
@@ -395,10 +388,10 @@ footer a{
     footer{
         background:rgba(15,23,42,0.9);
         border-top:1px solid #1e293b;
-        color:#e2e8f0;
     }
 }
-/* ===== MOBILE ===== */
+
+/* MOBILE */
 
 @media (max-width:768px){
 
@@ -425,29 +418,47 @@ footer a{
 
 <body>
 
-<!-- ===== NAVBAR ===== -->
+<!-- NAVBAR -->
 
 <div class="navbar">
 
     <div class="logo">
+
         <a href="/">
-            <img src="/images/logo.jpg"
+
+            <img
+            src="/images/logo.jpg"
             alt="MP Auto Mechanics Logo">
+
         </a>
+
     </div>
 
     <div class="nav-links">
+
         <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/services">Services</a>
-        <a href="/profile">Profile</a>
-        <a href="/contact">Contact</a>
-        <a href="/privacy">Privacy Policy</a>
+
+        <a href="/about.html">About</a>
+
+        <a href="/services.html">Services</a>
+
+        <a href="/contact.html">Contact</a>
+
+        <a href="/profile.html">Profile</a>
+
+        <a href="/privacy.html">Privacy Policy</a>
+
     </div>
 
     <div class="nav-contact">
-        📧 mpautoelectrics@gmail.com<br>
-        📧 Contact Developer: malinimercy@ymail.com
+
+        Email:
+        mpautoelectrics@gmail.com
+
+        <br>
+
+        Melbourne, Victoria
+
     </div>
 
     <div class="hamburger"
@@ -461,55 +472,57 @@ footer a{
 
 </div>
 
-<!-- ===== MOBILE MENU ===== -->
+<!-- MOBILE MENU -->
 
 <div class="mobile-menu"
 id="mobileMenu">
 
     <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/services">Services</a>
-    <a href="/profile">Profile</a>
-    <a href="/contact">Contact</a>
-    <a href="/privacy">Privacy Policy</a>
 
-    <hr style="margin:15px 0;">
+    <a href="/about.html">About</a>
 
-    <p style="font-size:14px;">
-        📧 mpautoelectrics@gmail.com<br>
-        📧 malinimercy@ymail.com
-    </p>
+    <a href="/services.html">Services</a>
+
+    <a href="/contact.html">Contact</a>
+
+    <a href="/profile.html">Profile</a>
+
+    <a href="/privacy.html">Privacy Policy</a>
 
 </div>
 
-<!-- ===== HERO ===== -->
+<!-- HERO -->
 
 <div class="hero">
 
     <div class="hero-text">
 
-        <h1>Contact MP Auto Mechanics</h1>
+        <h1>
+        Contact MP Auto Mechanics
+        </h1>
 
         <p>
-            Professional Auto Electrical Services Across Melbourne
+        Professional mobile auto electrical services across Melbourne.
         </p>
 
     </div>
 
 </div>
 
-<!-- ===== CONTENT ===== -->
+<!-- CONTENT -->
 
 <div class="container">
 
     <div class="card">
 
         <h2 style="margin-bottom:15px;">
-            Request a Service
+        Request a Service
         </h2>
 
         <p style="margin-bottom:25px;">
-            Fill out the form below and we’ll get back to you shortly.
+
+        Fill out the contact form below and we will respond as soon as possible regarding your vehicle electrical issue or service request.
+
         </p>
 
         <form
@@ -532,15 +545,15 @@ id="mobileMenu">
             required>
 
                 <option value="">
-                    Preferred Contact Method
+                Preferred Contact Method
                 </option>
 
                 <option value="Phone">
-                    Phone
+                Phone
                 </option>
 
                 <option value="Email">
-                    Email
+                Email
                 </option>
 
             </select>
@@ -555,7 +568,7 @@ id="mobileMenu">
             type="submit"
             class="btn">
 
-                Send Request
+            Send Request
 
             </button>
 
@@ -565,20 +578,105 @@ id="mobileMenu">
 
     </div>
 
+    <div class="card">
+
+        <h3>
+        Mobile Auto Electrical Services Across Melbourne
+        </h3>
+
+        <p>
+        MP Auto Mechanics provides professional mobile auto electrical
+        services throughout Melbourne and surrounding suburbs.
+        We assist with vehicle electrical diagnostics,
+        battery replacement,
+        alternator repairs,
+        starter motor problems,
+        wiring repairs,
+        lighting issues and roadside electrical faults.
+        </p>
+
+        <br>
+
+        <p>
+        Our goal is to provide reliable and affordable vehicle
+        electrical services with fast response times and professional support.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>
+        Business Contact Information
+        </h3>
+
+        <p>
+        Email: mpautoelectrics@gmail.com
+        </p>
+
+        <br>
+
+        <p>
+        Melbourne, Victoria, Australia
+        </p>
+
+        <br>
+
+        <p>
+        Service Hours:
+        Monday to Saturday
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>
+        Melbourne Service Area
+        </h3>
+
+        <iframe
+        src="https://maps.google.com/maps?q=Melbourne&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="100%"
+        height="300"
+        style="border:0;">
+        </iframe>
+
+    </div>
+
 </div>
 
-<!-- ===== FOOTER ===== -->
-
 <!-- FOOTER -->
-<footer>
-    © 2026 MP Auto Mechanics |
-    
-    <a href="/privacy">
-        Privacy Policy
-    </a>
-</footer>
 
-<!-- ===== JAVASCRIPT ===== -->
+<footer>
+
+    <p>
+    © 2026 MP Auto Mechanics. All Rights Reserved.
+    </p>
+
+    <br>
+
+    <p>
+    Professional Mobile Auto Electrical Services Across Melbourne
+    </p>
+
+    <br>
+
+    <p>
+
+        <a href="/privacy.html">
+        Privacy Policy
+        </a>
+
+        |
+
+        <a href="/contact.html">
+        Contact
+        </a>
+
+    </p>
+
+</footer>
 
 <script>
 
@@ -592,7 +690,8 @@ function toggleMenu(){
 
 document
 .getElementById("contactForm")
-.addEventListener("submit",
+.addEventListener(
+"submit",
 async function(e){
 
     e.preventDefault();
@@ -648,12 +747,10 @@ async function(e){
         const result =
         await response.json();
 
-        console.log(result);
-
         if(result.success){
 
             responseBox.innerHTML =
-            "✅ Message sent successfully!";
+            "Message sent successfully.";
 
             document
             .getElementById("contactForm")
@@ -663,19 +760,15 @@ async function(e){
         else{
 
             responseBox.innerHTML =
-            "❌ Failed to send message.";
-
-            console.log(result.error);
+            "Failed to send message.";
         }
 
     }
 
     catch(error){
 
-        console.log(error);
-
         responseBox.innerHTML =
-        "❌ Server error. Please try again later.";
+        "Server error. Please try again later.";
     }
 
 });
