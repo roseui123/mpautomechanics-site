@@ -2,29 +2,55 @@
 <html lang="en">
 <head>
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2942881557430221"
-     crossorigin="anonymous"></script>
-
-     
-<link rel="icon" href="/favicon.ico?v=5">
+<!-- Google AdSense -->
+<script async
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2942881557430221"
+crossorigin="anonymous"></script>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="theme-color" content="#ff4b4b">
+<title>
+Technician Profile | MP Auto Mechanics Melbourne
+</title>
+
+<meta
+name="description"
+content="Learn about the experienced technician behind MP Auto Mechanics Melbourne. Professional mobile auto electrical diagnostics, battery systems, alternator repairs and vehicle troubleshooting services."
+>
 
 <meta name="robots" content="index, follow">
 
-<link rel="canonical" href="https://mpautomechanics.com/profile">
+<link rel="canonical" href="https://mpautomechanics.com/profile.html">
 
-<title>Technician Profile | MP Auto Mechanics Melbourne</title>
+<link rel="icon" href="/favicon.ico?v=5">
 
-<meta name="description"
-content="Meet the expert technician behind MP Auto Mechanics Melbourne. 20+ years experience in auto electrical diagnostics, repairs, engine systems and mechanical engineering.">
+<meta name="theme-color" content="#ff4b4b">
+
+<!-- GOOGLE BUSINESS SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "MP Auto Mechanics",
+  "url": "https://mpautomechanics.com",
+  "image": "https://mpautomechanics.com/images/logo.jpg",
+  "telephone": "+61403345586",
+  "email": "mpautoelectrics@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Melbourne",
+    "addressRegion": "VIC",
+    "addressCountry": "AU"
+  },
+  "areaServed": "Melbourne",
+  "description":
+  "Professional mobile auto electrical services in Melbourne including diagnostics, battery replacement, alternator repair and electrical troubleshooting."
+}
+</script>
 
 <style>
 
-/* ===== RESET ===== */
 *{
     margin:0;
     padding:0;
@@ -35,10 +61,9 @@ body{
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
     background:#ffffff;
     color:#0f172a;
-    line-height:1.6;
+    line-height:1.7;
 }
 
-/* ===== DARK MODE ===== */
 @media (prefers-color-scheme: dark){
 
     body{
@@ -47,7 +72,8 @@ body{
     }
 }
 
-/* ===== NAVBAR ===== */
+/* NAVBAR */
+
 .navbar{
     position:sticky;
     top:0;
@@ -59,10 +85,10 @@ body{
 
     padding:12px 25px;
 
-    background:rgba(255,255,255,0.78);
+    background:rgba(255,255,255,0.82);
     backdrop-filter:blur(12px);
 
-    box-shadow:0px 5px 25px rgba(0,0,0,0.08);
+    box-shadow:0 5px 25px rgba(0,0,0,0.08);
 
     border-radius:0 0 15px 15px;
 }
@@ -70,26 +96,22 @@ body{
 @media (prefers-color-scheme: dark){
 
     .navbar{
-        background:rgba(2,6,23,0.85);
+        background:rgba(2,6,23,0.9);
     }
 }
 
 .logo img{
-    width:50px;
+    width:55px;
     border-radius:10px;
 }
 
-/* ===== NAV LINKS ===== */
 .nav-links a{
-    margin:0 12px;
+    margin:0 10px;
     text-decoration:none;
-    font-weight:600;
     color:#0f172a;
-
+    font-weight:600;
     padding:8px 14px;
-
     border-radius:10px;
-
     transition:0.3s ease;
 }
 
@@ -105,7 +127,6 @@ body{
     }
 }
 
-/* ===== CONTACT ===== */
 .nav-contact{
     font-size:13px;
     text-align:right;
@@ -118,7 +139,8 @@ body{
     }
 }
 
-/* ===== HAMBURGER ===== */
+/* MOBILE */
+
 .hamburger{
     display:none;
     flex-direction:column;
@@ -126,11 +148,9 @@ body{
 }
 
 .hamburger span{
-    height:3px;
     width:25px;
-
+    height:3px;
     background:#0f172a;
-
     margin:4px;
     border-radius:5px;
 }
@@ -142,23 +162,21 @@ body{
     }
 }
 
-/* ===== MOBILE MENU ===== */
 .mobile-menu{
     position:fixed;
-
     top:70px;
     right:-100%;
 
     width:220px;
 
-    background:rgba(255,255,255,0.95);
-    backdrop-filter:blur(10px);
+    background:rgba(255,255,255,0.96);
+    backdrop-filter:blur(12px);
 
-    box-shadow:-5px 0px 20px rgba(0,0,0,0.2);
+    padding:20px;
 
     border-radius:15px 0 0 15px;
 
-    padding:20px;
+    box-shadow:-5px 0 20px rgba(0,0,0,0.15);
 
     transition:0.4s ease;
 
@@ -171,12 +189,9 @@ body{
 
 .mobile-menu a{
     display:block;
-
     margin:15px 0;
-
     text-decoration:none;
     font-weight:bold;
-
     color:#0f172a;
 }
 
@@ -202,39 +217,39 @@ body{
     }
 }
 
-/* ===== HERO ===== */
+/* HERO */
+
 .hero{
-
-    height:340px;
-
-    border-radius:22px;
+    height:400px;
 
     margin:20px;
+    border-radius:20px;
+
+    overflow:hidden;
 
     background:
     linear-gradient(
         to top,
         rgba(0,0,0,0.55),
-        rgba(0,0,0,0.25)
+        rgba(0,0,0,0.18)
     ),
-    url('/images/mechanic.jpg') center/cover no-repeat;
+    url('/images/mechanic.jpg')
+    center/cover no-repeat;
 
     display:flex;
     align-items:center;
 
     padding:40px;
-
-    overflow:hidden;
 }
 
 .hero-text{
-    color:white;
     max-width:650px;
+    color:white;
 }
 
 .hero-text h1{
-    font-size:46px;
-    margin-bottom:12px;
+    font-size:42px;
+    margin-bottom:15px;
 }
 
 .hero-text p{
@@ -242,28 +257,52 @@ body{
     opacity:0.95;
 }
 
-/* ===== CONTAINER ===== */
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:14px 26px;
+
+    border-radius:12px;
+
+    background:#ff4b4b;
+    color:white;
+
+    text-decoration:none;
+    font-weight:bold;
+
+    transition:0.3s ease;
+}
+
+.btn:hover{
+    background:#e63939;
+    transform:translateY(-2px);
+}
+
+/* CONTENT */
+
 .container{
     padding:30px;
 }
 
-/* ===== CARD ===== */
 .card{
     background:white;
 
     padding:30px;
 
-    border-radius:20px;
+    border-radius:18px;
 
     margin-bottom:25px;
 
-    box-shadow:0px 10px 30px rgba(0,0,0,0.08);
-
-    transition:0.3s ease;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
 .card:hover{
-    transform:translateY(-5px);
+    transform:translateY(-4px);
+    transition:0.3s ease;
 }
 
 @media (prefers-color-scheme: dark){
@@ -273,11 +312,10 @@ body{
     }
 }
 
-/* ===== PROFILE GRID ===== */
 .profile-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:20px;
+    gap:25px;
 }
 
 @media (max-width:768px){
@@ -287,28 +325,20 @@ body{
     }
 }
 
-/* ===== PROFILE IMAGE ===== */
 .profile-image img{
     width:100%;
     border-radius:18px;
-
-    object-fit:cover;
-
-    box-shadow:0px 10px 25px rgba(0,0,0,0.15);
 }
 
-/* ===== HIGHLIGHT ===== */
 .highlight{
     color:#ff4b4b;
     font-weight:bold;
 }
 
-/* ===== EXPERIENCE LIST ===== */
 .exp-list li{
-    margin-bottom:12px;
+    margin-bottom:14px;
 }
 
-/* ===== BADGE ===== */
 .badge{
     display:inline-block;
 
@@ -325,16 +355,18 @@ body{
     margin-bottom:15px;
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
+
 footer{
     text-align:center;
-    padding:20px;
+
+    padding:25px;
+
     margin-top:40px;
 
-    background:rgba(255,255,255,0.75);
-    backdrop-filter:blur(10px);
+    background:rgba(255,255,255,0.82);
 
-    font-size:14px;
+    backdrop-filter:blur(10px);
 
     border-top:1px solid rgba(0,0,0,0.08);
 }
@@ -350,15 +382,15 @@ footer a{
     footer{
         background:rgba(15,23,42,0.9);
         border-top:1px solid #1e293b;
-        color:#e2e8f0;
     }
 }
 
-/* ===== MOBILE ===== */
+/* MOBILE */
+
 @media (max-width:768px){
 
     .hero{
-        height:260px;
+        height:300px;
         padding:25px;
     }
 
@@ -380,184 +412,289 @@ footer a{
 
 <body>
 
-<!-- ===== NAVBAR ===== -->
+<!-- NAVBAR -->
+
 <div class="navbar">
 
     <div class="logo">
         <a href="/">
-            <img src="/images/logo.jpg" alt="MP Auto Mechanics Logo">
+            <img
+            src="/images/logo.jpg"
+            alt="MP Auto Mechanics Logo">
         </a>
     </div>
 
     <div class="nav-links">
+
         <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/services">Services</a>
-        <a href="/profile">Profile</a>
-        <a href="/contact">Contact</a>
-        <a href="/privacy">Privacy Policy</a>
+
+        <a href="/about.html">About</a>
+
+        <a href="/services.html">Services</a>
+
+        <a href="/contact.html">Contact</a>
+
+        <a href="/profile.html">Profile</a>
+
+        <a href="/privacy.html">Privacy Policy</a>
+
     </div>
 
     <div class="nav-contact">
-        📧 mpautoelectrics@gmail.com<br>
-        📧 Contact Developer: malinimercy@ymail.com
+
+        📧 mpautoelectrics@gmail.com
+
+        <br>
+
+        Melbourne, Victoria
+
     </div>
 
     <div class="hamburger" onclick="toggleMenu()">
+
         <span></span>
         <span></span>
         <span></span>
+
     </div>
 
 </div>
 
-<!-- ===== MOBILE MENU ===== -->
+<!-- MOBILE MENU -->
+
 <div class="mobile-menu" id="mobileMenu">
 
     <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/services">Services</a>
-    <a href="/profile">Profile</a>
-    <a href="/contact">Contact</a>
-    <a href="/privacy">Privacy Policy</a>
 
-    <hr style="margin:15px 0;">
+    <a href="/about.html">About</a>
 
-    <p style="font-size:14px;">
-        📧 mpautoelectrics@gmail.com<br>
-        📧 malinimercy@ymail.com
-    </p>
+    <a href="/services.html">Services</a>
+
+    <a href="/contact.html">Contact</a>
+
+    <a href="/profile.html">Profile</a>
+
+    <a href="/privacy.html">Privacy Policy</a>
 
 </div>
 
-<!-- ===== HERO ===== -->
+<!-- HERO -->
+
 <div class="hero">
 
     <div class="hero-text">
 
         <div class="badge">
-            Certified Technician
+            Professional Mobile Auto Electrician
         </div>
 
-        <h1>Expert Auto Mechanic & Diagnostics Specialist</h1>
+        <h1>
+        Experienced Auto Electrical Technician
+        </h1>
 
         <p>
-            Professional auto electrical diagnostics, repairs and mechanical solutions across Melbourne with over 20 years of industry experience.
+        Providing reliable mobile diagnostics,
+        battery replacement, alternator repairs,
+        starter motor troubleshooting and vehicle
+        electrical services across Melbourne.
         </p>
+
+        <a href="/contact.html" class="btn">
+        Contact MP Auto Mechanics
+        </a>
 
     </div>
 
 </div>
 
-<!-- ===== CONTENT ===== -->
+<!-- CONTENT -->
+
 <div class="container">
 
     <div class="profile-grid">
 
-        <!-- ===== LEFT ===== -->
         <div class="card">
 
-            <h2 style="margin-bottom:15px;">
-                Technician Profile
+            <h2>
+            About the Technician
             </h2>
 
-            <p style="margin-bottom:18px;">
-                MP Auto Mechanics is operated by an experienced automotive technician specialising in vehicle diagnostics, electrical systems and repair solutions.
-            </p>
-
-            <p style="margin-bottom:18px;">
-                <span class="highlight">Certificate III Qualified Technician</span> with advanced knowledge in modern automotive systems and repair procedures.
-            </p>
-
-            <p style="margin-bottom:18px;">
-                <span class="highlight">Masters in Mechanical Engineering</span> supporting strong technical expertise in engine systems, diagnostics and automotive technologies.
-            </p>
+            <br>
 
             <p>
-                Dedicated to providing honest, reliable and professional automotive services with customer satisfaction as the highest priority.
+            MP Auto Mechanics is operated by an experienced
+            automotive technician specialising in vehicle
+            electrical systems, diagnostics and repair solutions.
+            </p>
+
+            <br>
+
+            <p>
+            The business focuses on accurate fault diagnosis,
+            reliable workmanship and professional customer service
+            for a wide range of vehicle electrical problems.
+            </p>
+
+            <br>
+
+            <p>
+            <span class="highlight">
+            Extensive experience
+            </span>
+            with battery systems,
+            alternator repairs,
+            starter motors,
+            wiring repairs and vehicle diagnostics.
             </p>
 
         </div>
 
-        <!-- ===== RIGHT ===== -->
         <div class="card profile-image">
 
-            <img src="/images/mechanic.jpg"
-            alt="Expert Auto Mechanic Melbourne">
+            <img
+            src="/images/mechanic.jpg"
+            alt="Professional auto electrician in Melbourne">
 
         </div>
 
     </div>
 
-    <!-- ===== EXPERIENCE ===== -->
     <div class="card">
 
-        <h2 style="margin-bottom:20px;">
-            Professional Experience
+        <h2>
+        Professional Experience
         </h2>
+
+        <br>
 
         <ul class="exp-list">
 
             <li>
-                ✔ 20+ years experience in automotive diagnostics and repairs
+            ✔ Mobile auto electrical services across Melbourne
             </li>
 
             <li>
-                ✔ Extensive knowledge in vehicle electrical systems and fault detection
+            ✔ Diagnostics and vehicle fault detection
             </li>
 
             <li>
-                ✔ Experience with battery systems, alternators and wiring repairs
+            ✔ Battery replacement and charging system repairs
             </li>
 
             <li>
-                ✔ Advanced diagnostic scanning and troubleshooting expertise
+            ✔ Alternator and starter motor troubleshooting
             </li>
 
             <li>
-                ✔ Mobile service support across Melbourne suburbs
+            ✔ Vehicle wiring inspections and repair solutions
             </li>
 
             <li>
-                ✔ Commitment to reliable workmanship and customer satisfaction
+            ✔ Experience with various vehicle makes and models
             </li>
 
         </ul>
 
     </div>
 
-    <!-- ===== VALUES ===== -->
     <div class="card">
 
-        <h2 style="margin-bottom:15px;">
-            Our Commitment
+        <h2>
+        Service Approach
         </h2>
 
-        <p style="margin-bottom:15px;">
-            Every vehicle is treated with professional care and attention using quality diagnostic methods and repair standards.
-        </p>
+        <br>
 
         <p>
-            MP Auto Mechanics focuses on accurate diagnostics, transparent communication and dependable service to help keep your vehicle operating safely and efficiently.
+        Every vehicle inspection is carried out carefully using
+        professional diagnostic methods and repair procedures.
+        The goal is to identify the cause of the issue accurately
+        and provide practical repair recommendations.
         </p>
+
+        <br>
+
+        <p>
+        MP Auto Mechanics aims to provide dependable service,
+        transparent communication and efficient repair solutions
+        to help customers maintain reliable vehicle performance.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>
+        Areas Serviced
+        </h2>
+
+        <br>
+
+        <p>
+        Mobile auto electrical services are available across
+        Melbourne including Cranbourne, Berwick,
+        Narre Warren, Dandenong, Frankston and surrounding suburbs.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>
+        Need Vehicle Electrical Assistance?
+        </h2>
+
+        <br>
+
+        <p>
+        Contact MP Auto Mechanics for diagnostics,
+        troubleshooting and mobile auto electrical services
+        across Melbourne.
+        </p>
+
+        <a href="/contact.html" class="btn">
+        Request Service
+        </a>
 
     </div>
 
 </div>
 
-<!-- ===== FOOTER ===== -->
 <!-- FOOTER -->
+
 <footer>
-    © 2026 MP Auto Mechanics |
-    
-    <a href="/privacy">
+
+    <p>
+    © 2026 MP Auto Mechanics. All Rights Reserved.
+    </p>
+
+    <br>
+
+    <p>
+    Professional Mobile Auto Electrical Services Across Melbourne
+    </p>
+
+    <br>
+
+    <p>
+
+        <a href="/privacy.html">
         Privacy Policy
-    </a>
+        </a>
+
+        |
+
+        <a href="/contact.html">
+        Contact
+        </a>
+
+    </p>
+
 </footer>
-<!-- ===== SCRIPT ===== -->
+
 <script>
 
-function toggleMenu() {
+function toggleMenu(){
 
     document
     .getElementById("mobileMenu")
