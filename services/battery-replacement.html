@@ -2,23 +2,46 @@
 <html lang="en">
 <head>
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2942881557430221"
+     crossorigin="anonymous"></script>
+
+<link rel="icon" href="/favicon.ico?v=5">
+<meta name="theme-color" content="#ff4b4b">
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Car Battery Replacement Melbourne | MP Auto Mechanics</title>
 
-<meta name="description"
-content="Professional mobile car battery replacement services in Melbourne. Fast diagnostics, roadside assistance and battery testing for all vehicle types.">
+<meta name="description" content="Professional car battery replacement services in Melbourne. Fast diagnostics, battery testing, installation and mobile battery replacement for all vehicle types.">
 
-<link rel="canonical"
-href="https://mpautomechanics.com/services/battery-replacement.html">
+<meta name="keywords" content="car battery replacement Melbourne, mobile battery replacement Melbourne, auto electrician battery service, dead car battery Melbourne, vehicle battery installation">
 
-<link rel="icon" href="/favicon.ico?v=5">
+<link rel="canonical" href="https://mpautomechanics.com/battery-replacement">
+
+<meta name="robots" content="index, follow">
+
+<!-- ===== SCHEMA ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Car Battery Replacement",
+  "provider": {
+    "@type": "AutoRepair",
+    "name": "MP Auto Mechanics"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Melbourne"
+  },
+  "description": "Professional car battery replacement and battery diagnostics in Melbourne."
+}
+</script>
 
 <style>
 
-/* SAME STYLE AS INDEX */
-
+/* ===== RESET ===== */
 *{
     margin:0;
     padding:0;
@@ -29,17 +52,21 @@ body{
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
     background:#ffffff;
     color:#0f172a;
-    line-height:1.8;
+    line-height:1.6;
+    transition:0.3s ease;
 }
 
+/* ===== DARK MODE ===== */
 @media (prefers-color-scheme: dark){
 
     body{
         background:#020617;
         color:#e2e8f0;
     }
+
 }
 
+/* ===== NAVBAR ===== */
 .navbar{
     position:sticky;
     top:0;
@@ -55,18 +82,40 @@ body{
     backdrop-filter:blur(12px);
 
     box-shadow:0px 5px 25px rgba(0,0,0,0.08);
+    border-radius:0 0 15px 15px;
 }
 
+@media (prefers-color-scheme: dark){
+
+    .navbar{
+        background:rgba(2,6,23,0.85);
+    }
+
+}
+
+/* ===== LOGO ===== */
 .logo img{
     width:50px;
     border-radius:10px;
 }
 
+/* ===== NAV LINKS ===== */
 .nav-links a{
     margin:0 12px;
     text-decoration:none;
     font-weight:600;
     color:#0f172a;
+
+    padding:8px 14px;
+    border-radius:10px;
+
+    transition:0.3s ease;
+}
+
+.nav-links a:hover{
+    background:#ff4b4b;
+    color:white;
+    transform:translateY(-2px);
 }
 
 @media (prefers-color-scheme: dark){
@@ -74,46 +123,186 @@ body{
     .nav-links a{
         color:#e2e8f0;
     }
+
 }
 
+/* ===== CONTACT ===== */
+.nav-contact{
+    font-size:13px;
+    text-align:right;
+}
+
+@media (max-width:768px){
+
+    .nav-contact{
+        display:none;
+    }
+
+}
+
+/* ===== HAMBURGER ===== */
+.hamburger{
+    display:none;
+    flex-direction:column;
+    cursor:pointer;
+}
+
+.hamburger span{
+    height:3px;
+    width:25px;
+    background:#0f172a;
+    margin:4px;
+    border-radius:5px;
+}
+
+@media (prefers-color-scheme: dark){
+
+    .hamburger span{
+        background:white;
+    }
+
+}
+
+/* ===== MOBILE MENU ===== */
+.mobile-menu{
+    position:fixed;
+    top:70px;
+    right:-100%;
+
+    width:220px;
+
+    background:rgba(255,255,255,0.95);
+    backdrop-filter:blur(10px);
+
+    box-shadow:-5px 0px 20px rgba(0,0,0,0.2);
+
+    border-radius:15px 0 0 15px;
+
+    padding:20px;
+
+    transition:0.4s ease;
+
+    z-index:10000;
+}
+
+.mobile-menu.active{
+    right:0;
+}
+
+.mobile-menu a{
+    display:block;
+    margin:15px 0;
+    text-decoration:none;
+    font-weight:bold;
+    color:#0f172a;
+}
+
+@media (prefers-color-scheme: dark){
+
+    .mobile-menu{
+        background:rgba(2,6,23,0.95);
+    }
+
+    .mobile-menu a{
+        color:white;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hamburger{
+        display:flex;
+    }
+
+}
+
+/* ===== HERO ===== */
 .hero{
-    height:360px;
-    margin:20px;
+    height:420px;
     border-radius:20px;
+    margin:20px;
 
     background:
     linear-gradient(
-        rgba(0,0,0,0.55),
-        rgba(0,0,0,0.3)
+        to top,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.15)
     ),
-    url('/images/car.jpg') center/cover no-repeat;
+    url('/images/Banner_Car_image.png') center/cover no-repeat;
 
     display:flex;
     align-items:center;
+
     padding:40px;
+
+    overflow:hidden;
 }
 
 .hero-text{
-    color:white;
     max-width:650px;
+    color:white;
 }
 
 .hero-text h1{
     font-size:42px;
-    margin-bottom:15px;
+    margin-bottom:12px;
 }
 
+.hero-text p{
+    font-size:18px;
+}
+
+/* ===== BUTTON ===== */
+.btn{
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:14px 26px;
+
+    border-radius:12px;
+
+    background:#ff4b4b;
+    color:white;
+
+    font-weight:bold;
+    text-decoration:none;
+
+    transition:0.3s ease;
+}
+
+.btn:hover{
+    background:#e63939;
+    transform:scale(1.05);
+}
+
+/* ===== CONTAINER ===== */
 .container{
     padding:30px;
 }
 
+/* ===== CARDS ===== */
 .card{
     background:white;
+
     padding:30px;
+
     border-radius:18px;
+
     margin-bottom:25px;
 
     box-shadow:0px 10px 30px rgba(0,0,0,0.08);
+
+    transition:0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-5px);
 }
 
 @media (prefers-color-scheme: dark){
@@ -121,28 +310,52 @@ body{
     .card{
         background:#0f172a;
     }
+
 }
 
-.btn{
-    display:inline-block;
-    margin-top:20px;
-    padding:14px 24px;
-
-    background:#ff4b4b;
-    color:white;
-
-    text-decoration:none;
-    border-radius:12px;
-    font-weight:bold;
+/* ===== IMAGE SECTION ===== */
+.images{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
 }
 
+.images img{
+    width:100%;
+    max-width:320px;
+
+    border-radius:18px;
+
+    transition:0.3s ease;
+}
+
+.images img:hover{
+    transform:scale(1.04);
+}
+
+/* ===== LIST ===== */
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+/* ===== FOOTER ===== */
 footer{
     text-align:center;
-    padding:25px;
+
+    padding:20px;
     margin-top:40px;
 
     background:rgba(255,255,255,0.75);
+
     backdrop-filter:blur(10px);
+
+    border-top:1px solid rgba(0,0,0,0.08);
+
+    font-size:14px;
 }
 
 footer a{
@@ -154,9 +367,33 @@ footer a{
 @media (prefers-color-scheme: dark){
 
     footer{
-        background:#0f172a;
+        background:rgba(15,23,42,0.9);
+        border-top:1px solid #1e293b;
         color:#e2e8f0;
     }
+
+}
+
+/* ===== MOBILE ===== */
+@media (max-width:768px){
+
+    .hero{
+        height:300px;
+        padding:25px;
+    }
+
+    .hero-text h1{
+        font-size:28px;
+    }
+
+    .hero-text p{
+        font-size:15px;
+    }
+
+    .container{
+        padding:15px;
+    }
+
 }
 
 </style>
@@ -164,150 +401,194 @@ footer a{
 
 <body>
 
-<!-- NAVBAR -->
-
+<!-- ===== NAVBAR ===== -->
 <div class="navbar">
 
-<div class="logo">
-<a href="/">
-<img src="/images/logo.jpg" alt="MP Auto Mechanics Logo">
-</a>
+    <div class="logo">
+        <a href="/">
+            <img src="/images/logo.jpg" alt="MP Auto Mechanics Logo">
+        </a>
+    </div>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/profile">Profile</a>
+        <a href="/contact">Contact</a>
+        <a href="/privacy">Privacy Policy</a>
+    </div>
+
+    <div class="nav-contact">
+        📧 mpautoelectrics@gmail.com<br>
+        📧 Melbourne, Australia
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
 </div>
 
-<div class="nav-links">
-<a href="/">Home</a>
-<a href="/about">About</a>
-<a href="/services">Services</a>
-<a href="/contact">Contact</a>
-</div>
+<!-- ===== MOBILE MENU ===== -->
+<div class="mobile-menu" id="mobileMenu">
+
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/services">Services</a>
+    <a href="/profile">Profile</a>
+    <a href="/contact">Contact</a>
+    <a href="/privacy">Privacy Policy</a>
+
+    <hr style="margin:15px 0;">
+
+    <p style="font-size:14px;">
+        📧 mpautoelectrics@gmail.com
+    </p>
 
 </div>
 
-<!-- HERO -->
-
+<!-- ===== HERO ===== -->
 <div class="hero">
 
-<div class="hero-text">
+    <div class="hero-text">
 
-<h1>Battery Replacement Services Melbourne</h1>
+        <h1>Car Battery Replacement Melbourne</h1>
 
-<p>
-Fast mobile battery testing and replacement services across Melbourne for all vehicle types.
-</p>
+        <p>
+            Fast, reliable and professional battery replacement services for all vehicle types across Melbourne suburbs.
+        </p>
+
+        <a href="/contact" class="btn">
+            Request Battery Service
+        </a>
+
+    </div>
 
 </div>
 
-</div>
-
-<!-- CONTENT -->
-
+<!-- ===== CONTENT ===== -->
 <div class="container">
 
-<div class="card">
+    <div class="card">
 
-<h2>Professional Car Battery Replacement</h2>
+        <h2>Professional Car Battery Services</h2>
 
-<p>
-A failing battery can leave your vehicle unable to start and may cause electrical problems throughout the vehicle. MP Auto Mechanics provides professional battery testing and replacement services across Melbourne using reliable automotive batteries suitable for modern vehicles.
-</p>
+        <p>
+            MP Auto Mechanics provides professional car battery replacement services in Melbourne for cars, SUVs, commercial vehicles and 4WDs. A weak or failing battery can cause starting problems, electrical malfunctions and unexpected breakdowns. Our experienced auto electricians perform complete battery testing and diagnostics before replacement to ensure the correct solution for your vehicle.
+        </p>
 
-<p>
-Our experienced technicians diagnose battery issues, charging problems and electrical faults using professional diagnostic equipment. We help identify whether the issue is caused by the battery itself, alternator charging problems or excessive electrical drain.
-</p>
+        <br>
 
-<p>
-Modern vehicles rely heavily on stable electrical systems for ignition, lighting, ECU systems and onboard electronics. A weak battery can affect engine performance, dashboard systems and vehicle reliability.
-</p>
+        <p>
+            We supply and install high-quality automotive batteries designed for Australian driving conditions. Whether your vehicle battery has completely failed or is showing signs of reduced performance, we provide reliable mobile battery replacement services to get you back on the road quickly and safely.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Signs Your Car Battery May Need Replacement</h2>
+
+        <ul>
+            <li>Vehicle struggles to start in the morning</li>
+            <li>Dashboard battery warning light appears</li>
+            <li>Headlights become dim or flicker</li>
+            <li>Electrical accessories stop working properly</li>
+            <li>Clicking sound when starting the engine</li>
+            <li>Battery older than 3-5 years</li>
+            <li>Corrosion around battery terminals</li>
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Why Choose MP Auto Mechanics?</h2>
+
+        <p>
+            With over 20 years of industry experience, MP Auto Mechanics delivers trusted automotive electrical services across Melbourne. We focus on accurate diagnostics, quality workmanship and dependable customer service.
+        </p>
+
+        <br>
+
+        <ul>
+            <li>Experienced automotive electricians</li>
+            <li>Mobile battery replacement available</li>
+            <li>Affordable pricing and quality service</li>
+            <li>Fast diagnostics and installation</li>
+            <li>Professional support for most vehicle brands</li>
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Battery Testing and Diagnostics</h2>
+
+        <p>
+            Battery problems are not always caused by the battery itself. Faulty alternators, charging systems or wiring issues can also affect battery performance. We perform detailed diagnostics to identify the exact cause of the problem before replacing components unnecessarily.
+        </p>
+
+        <br>
+
+        <p>
+            Our diagnostics include battery voltage testing, charging system inspection, terminal checks and alternator performance testing to ensure reliable vehicle operation.
+        </p>
+
+    </div>
+
+    <!-- ===== IMAGES ===== -->
+    <div class="images">
+
+        <img src="/images/mechanic.jpg"
+        alt="Car battery replacement Melbourne">
+
+        <img src="/images/car.jpg"
+        alt="Mobile auto electrician battery service">
+
+        <img src="/images/gear.jpg"
+        alt="Vehicle battery diagnostics equipment">
+
+    </div>
+
+    <div class="card">
+
+        <h2>Need Immediate Battery Assistance?</h2>
+
+        <p>
+            Contact MP Auto Mechanics today for professional car battery replacement and automotive electrical services across Melbourne.
+        </p>
+
+        <a href="/contact" class="btn">
+            Contact Us
+        </a>
+
+    </div>
 
 </div>
 
-<div class="card">
-
-<h2>Common Signs of Battery Problems</h2>
-
-<ul style="padding-left:20px; margin-top:15px;">
-
-<li>Slow engine cranking</li>
-<li>Vehicle not starting</li>
-<li>Battery warning light</li>
-<li>Dim headlights</li>
-<li>Electrical accessories not working properly</li>
-<li>Repeated flat battery issues</li>
-<li>Clicking noise during ignition</li>
-
-</ul>
-
-</div>
-
-<div class="card">
-
-<h2>Mobile Battery Replacement Across Melbourne</h2>
-
-<p>
-We provide mobile battery replacement services across Melbourne suburbs including emergency roadside assistance for vehicles that fail to start. Our mobile service allows customers to receive fast assistance without needing to tow their vehicle to a workshop.
-</p>
-
-<p>
-Our technicians carry professional diagnostic equipment to test battery voltage, charging systems and alternator performance before replacement.
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>Why Choose MP Auto Mechanics?</h2>
-
-<ul style="padding-left:20px; margin-top:15px;">
-
-<li>20+ Years Experience</li>
-<li>Fast Mobile Service</li>
-<li>Advanced Diagnostics</li>
-<li>Professional Auto Electrical Repairs</li>
-<li>Reliable Melbourne Service</li>
-
-</ul>
-
-<a href="/contact" class="btn">
-Request Service
-</a>
-
-</div>
-
-<div class="card">
-
-<h2>Frequently Asked Questions</h2>
-
-<h3>How long does battery replacement take?</h3>
-
-<p>
-Most battery replacements are completed within 30 to 45 minutes depending on the vehicle model and battery location.
-</p>
-
-<h3>Do you provide roadside battery replacement?</h3>
-
-<p>
-Yes, we provide mobile roadside battery replacement services across Melbourne suburbs.
-</p>
-
-<h3>Can you test the charging system?</h3>
-
-<p>
-Yes, we perform charging system diagnostics to check battery condition and alternator performance.
-</p>
-
-</div>
-
-</div>
-
+<!-- ===== FOOTER ===== -->
 <footer>
 
-© 2026 MP Auto Mechanics |
+    © 2026 MP Auto Mechanics |
 
-<a href="/privacy">
-Privacy Policy
-</a>
+    <a href="/privacy">
+        Privacy Policy
+    </a>
 
 </footer>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+
+function toggleMenu(){
+    document.getElementById("mobileMenu").classList.toggle("active");
+}
+
+</script>
 
 </body>
 </html>
