@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Google AdSense -->
+<script async
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2942881557430221"
+crossorigin="anonymous"></script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+Head Unit Installation Case study | MP Auto Mechanics Melbourne
+</title>
+
+<meta
+name="description"
+content="Professional auto electrician in Melbourne providing battery replacement, alternator repair, diagnostics, starter motor repair, wiring repair and mobile roadside assistance."
+>
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://mpautomechanics.com/case-studies/head-unit-installation-case-study.html">
+
+<link rel="icon" href="/favicon.ico?v=5">
+
+<meta name="theme-color" content="#ff4b4b">
+
+<!-- GOOGLE BUSINESS SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "MP Auto Mechanics",
+  "url": "https://mpautomechanics.com",
+  "image": "https://mpautomechanics.com/images/logo.jpg",
+  "telephone": "+61403345586",
+  "email": "mpautoelectrics@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Melbourne",
+    "addressRegion": "VIC",
+    "addressCountry": "AU"
+  },
+  "areaServed": "Melbourne",
+  "description":
+  "Mobile auto electrician in Melbourne specialising in diagnostics, battery replacement, alternator repair and wiring solutions."
+}
+</script>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    background:#ffffff;
+    color:#0f172a;
+    line-height:1.7;
+}
+
+@media (prefers-color-scheme: dark){
+
+    body{
+        background:#020617;
+        color:#e2e8f0;
+    }
+}
+
+/* NAVBAR */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:9999;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:12px 25px;
+
+    background:rgba(255,255,255,0.82);
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 5px 25px rgba(0,0,0,0.08);
+
+    border-radius:0 0 15px 15px;
+}
+
+@media (prefers-color-scheme: dark){
+
+    .navbar{
+        background:rgba(2,6,23,0.9);
+    }
+}
+
+.logo img{
+    width:55px;
+    border-radius:10px;
+}
+
+.nav-links a{
+    margin:0 10px;
+    text-decoration:none;
+    color:#0f172a;
+    font-weight:600;
+    padding:8px 14px;
+    border-radius:10px;
+    transition:0.3s ease;
+}
+
+.nav-links a:hover{
+    background:#ff4b4b;
+    color:white;
+}
+
+@media (prefers-color-scheme: dark){
+
+    .nav-links a{
+        color:#e2e8f0;
+    }
+}
+
+.nav-contact{
+    font-size:13px;
+    text-align:right;
+}
+
+@media (max-width:768px){
+
+    .nav-contact{
+        display:none;
+    }
+}
+
+/* MOBILE */
+
+.hamburger{
+    display:none;
+    flex-direction:column;
+    cursor:pointer;
+}
+
+.hamburger span{
+    width:25px;
+    height:3px;
+    background:#0f172a;
+    margin:4px;
+    border-radius:5px;
+}
+
+@media (prefers-color-scheme: dark){
+
+    .hamburger span{
+        background:white;
+    }
+}
+
+.mobile-menu{
+    position:fixed;
+    top:70px;
+    right:-100%;
+
+    width:220px;
+
+    background:rgba(255,255,255,0.96);
+    backdrop-filter:blur(12px);
+
+    padding:20px;
+
+    border-radius:15px 0 0 15px;
+
+    box-shadow:-5px 0 20px rgba(0,0,0,0.15);
+
+    transition:0.4s ease;
+
+    z-index:10000;
+}
+
+.mobile-menu.active{
+    right:0;
+}
+
+.mobile-menu a{
+    display:block;
+    margin:15px 0;
+    text-decoration:none;
+    font-weight:bold;
+    color:#0f172a;
+}
+
+@media (prefers-color-scheme: dark){
+
+    .mobile-menu{
+        background:rgba(2,6,23,0.95);
+    }
+
+    .mobile-menu a{
+        color:white;
+    }
+}
+
+@media (max-width:768px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hamburger{
+        display:flex;
+    }
+}
+
+/* HERO */
+
+.hero{
+    height:430px;
+
+    margin:20px;
+    border-radius:20px;
+
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+        to top,
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.15)
+    ),
+    url('/images/Banner_Car_image.png')
+    center/cover no-repeat;
+
+    display:flex;
+    align-items:center;
+
+    padding:40px;
+}
+
+.hero-text{
+    max-width:650px;
+    color:white;
+}
+
+.hero-text h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero-text p{
+    font-size:18px;
+    opacity:0.95;
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:14px 26px;
+
+    border-radius:12px;
+
+    background:#ff4b4b;
+    color:white;
+
+    text-decoration:none;
+    font-weight:bold;
+
+    transition:0.3s ease;
+}
+
+.btn:hover{
+    background:#e63939;
+    transform:translateY(-2px);
+}
+
+/* CONTENT */
+
+.container{
+    padding:30px;
+}
+
+.card{
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    transition:0.3s ease;
+}
+
+@media (prefers-color-scheme: dark){
+
+    .card{
+        background:#0f172a;
+    }
+}
+
+.images{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.images img{
+
+    width:100%;
+
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+
+    transition:0.3s ease;
+
+}
+
+.images img:hover{
+
+    transform:translateY(-3px);
+
+}
+
+iframe{
+    border-radius:15px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:40px;
+
+    background:rgba(255,255,255,0.82);
+
+    backdrop-filter:blur(10px);
+
+    border-top:1px solid rgba(0,0,0,0.08);
+}
+
+footer a{
+    color:#ff4b4b;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+@media (prefers-color-scheme: dark){
+
+    footer{
+        background:rgba(15,23,42,0.9);
+        border-top:1px solid #1e293b;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    .hero{
+        height:320px;
+        padding:25px;
+    }
+
+    .hero-text h1{
+        font-size:28px;
+    }
+
+    .hero-text p{
+        font-size:15px;
+    }
+
+    .container{
+        padding:15px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+
+    <div class="logo">
+        <a href="/">
+            <img
+            src="/images/logo.jpg"
+            alt="MP Auto Mechanics Logo">
+        </a>
+    </div>
+
+    <div class="nav-links">
+
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/services.html">Services</a>
+        <a href="/gallery.html">Gallery</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/profile.html">Profile</a>
+        <a href="/privacy.html">Privacy Policy</a>
+
+    </div>
+
+    <div class="nav-contact">
+
+        📧 mpautoelectrics@gmail.com
+        Contact Developer:
+            📧 malinimercy@ymail.com
+
+        <br>
+
+        Melbourne, Victoria
+
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+</div>
+
+<!-- MOBILE MENU -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/services.html">Services</a>
+    <a href="/gallery.html">Gallery</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/profile.html">Profile</a>
+    <a href="/privacy.html">Privacy Policy</a>
+
+</div>
+
+<!-- HERO -->
+
+<div class="hero" style="
+background:
+linear-gradient(
+to top,
+rgba(0,0,0,0.55),
+rgba(0,0,0,0.15)
+),
+url('/images/HeadUnit_installation.jpg')
+center/cover no-repeat;">
+  
+    <div class="hero-text">
+
+        <h1>
+          Head Unit Installation Case Study
+        </h1>
+
+        <p>
+          Professional head unit installation and infotainment
+          system upgrade completed by MP Auto Mechanics in Melbourne.
+        </p>
+        <a href="/contact.html" class="btn">
+        Request Service
+        </a>
+
+    </div>
+
+</div>
+
+<!-- CONTENT -->
+
+<div class="container">
+
+    <div class="card">
+
+<h2>
+Head Unit Installation and Infotainment Upgrade – Melbourne Case Study
+</h2>
+
+<p>
+This project involved upgrading a customer's factory
+multimedia system with a modern touchscreen head unit.
+The customer wanted improved connectivity, better audio
+quality and access to modern smartphone integration
+features.
+</p>
+
+<br>
+
+<p>
+Many factory-installed head units lack modern features
+such as Apple CarPlay, Android Auto and advanced
+Bluetooth functionality. A professionally installed
+head unit can significantly improve convenience and
+the overall driving experience.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Customer Request
+</h3>
+
+<p>
+The customer contacted MP Auto Mechanics seeking a
+multimedia system upgrade that would provide:
+</p>
+
+<ul style="padding-left:20px;">
+
+<li>Apple CarPlay functionality.</li>
+
+<li>Android Auto compatibility.</li>
+
+<li>Bluetooth music streaming.</li>
+
+<li>Hands-free phone calling.</li>
+
+<li>Improved audio quality.</li>
+
+<li>Modern touchscreen controls.</li>
+
+</ul>
+
+<p>
+The customer also wanted the installation to maintain
+a factory-style appearance while preserving existing
+vehicle functions.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Vehicle Assessment
+</h3>
+
+<p>
+Before installation, the vehicle's existing head unit,
+dashboard layout and electrical connections were
+carefully inspected.
+</p>
+
+<p>
+Compatibility checks were completed to ensure the new
+system would integrate correctly with the vehicle's
+electrical system and audio components.
+</p>
+
+<p>
+All required installation accessories, mounting
+hardware and wiring interfaces were verified before
+work commenced.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Installation Procedure
+</h3>
+
+<p>
+The factory head unit was removed using professional
+disassembly procedures to prevent damage to dashboard
+components.
+</p>
+
+<ul style="padding-left:20px;">
+
+<li>Factory head unit removed.</li>
+
+<li>Dashboard trim carefully dismantled.</li>
+
+<li>Vehicle wiring inspected.</li>
+
+<li>Power and ground circuits verified.</li>
+
+<li>Audio wiring connected.</li>
+
+<li>Mounting hardware installed.</li>
+
+<li>New head unit fitted securely.</li>
+
+</ul>
+
+<p>
+All wiring connections were carefully secured to ensure
+long-term reliability and optimal performance.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+System Testing and Configuration
+</h3>
+
+<p>
+Once installation was completed, the system underwent
+extensive testing to confirm proper operation.
+</p>
+
+<ul style="padding-left:20px;">
+
+<li>Touchscreen responsiveness tested.</li>
+
+<li>Bluetooth pairing verified.</li>
+
+<li>Audio output tested.</li>
+
+<li>USB connections checked.</li>
+
+<li>Smartphone integration configured.</li>
+
+<li>Vehicle electrical systems verified.</li>
+
+</ul>
+
+<p>
+All features operated correctly and no electrical
+faults were present after installation.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Results After Installation
+</h3>
+
+<p>
+The upgraded multimedia system delivered significant
+improvements compared with the factory unit.
+</p>
+
+<ul style="padding-left:20px;">
+
+<li>Modern touchscreen interface.</li>
+
+<li>Enhanced audio performance.</li>
+
+<li>Wireless connectivity features.</li>
+
+<li>Improved navigation capabilities.</li>
+
+<li>Hands-free communication.</li>
+
+<li>Greater driver convenience.</li>
+
+</ul>
+
+<p>
+The customer was extremely satisfied with the clean
+installation and additional functionality provided by
+the upgrade.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Benefits of a Professional Head Unit Installation
+</h3>
+
+<p>
+Modern infotainment upgrades provide numerous benefits
+for vehicle owners.
+</p>
+
+<ul style="padding-left:20px;">
+
+<li>Improved smartphone integration.</li>
+
+<li>Better navigation options.</li>
+
+<li>Enhanced entertainment features.</li>
+
+<li>Improved sound quality.</li>
+
+<li>Safer hands-free operation.</li>
+
+<li>Increased vehicle value.</li>
+
+</ul>
+
+<p>
+Professional installation helps ensure all components
+operate correctly and prevents wiring issues that may
+occur with improper installations.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Why Proper Wiring Matters
+</h3>
+
+<p>
+Modern vehicles contain sophisticated electronic
+systems. Incorrect wiring can cause battery drain,
+audio issues, warning lights and other electrical
+problems.
+</p>
+
+<p>
+At MP Auto Mechanics, all multimedia upgrades are
+installed using professional automotive electrical
+practices to ensure safe and reliable operation.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Need a Head Unit Upgrade in Melbourne?
+</h3>
+
+<p>
+MP Auto Mechanics provides professional head unit
+installation, infotainment upgrades, electrical
+diagnostics and vehicle accessory installations
+throughout Melbourne.
+</p>
+
+<p>
+Whether you need Apple CarPlay, Android Auto,
+Bluetooth connectivity or a complete multimedia
+upgrade, we can help.
+</p>
+
+<a href="/services.html" class="btn">
+View Services
+</a>
+
+<a href="/contact.html" class="btn" style="margin-left:10px;">
+Contact Us
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>
+About This Case Study
+</h3>
+
+<p>
+This case study is based on actual head unit
+installation work completed by MP Auto Mechanics
+in Melbourne.
+</p>
+
+<p>
+Written by MP Auto Mechanics – Specialists in
+Automotive Electronics, Vehicle Diagnostics,
+Infotainment Upgrades and Auto Electrical Repairs.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Related Case Studies
+</h3>
+
+<ul style="padding-left:20px;">
+
+<li>
+<a href="/case-studies/dashcam-installation-case-study.html">
+Dashcam Installation Case Study
+</a>
+</li>
+
+<li>
+<a href="/case-studies/engine-repair-case-study.html">
+Engine Repair Case Study
+</a>
+</li>
+
+<li>
+<a href="/case-studies/mercedes-diagnostics-case-study.html">
+Mercedes Diagnostics Case Study
+</a>
+</li>
+
+</ul>
+
+</div>
+</div>
+    
+    </div>
+
+    <div class="card">
+
+        <h3>
+        Business Information
+        </h3>
+
+        <p>
+        MP Auto Mechanics provides mobile auto electrical
+        diagnostics and repair services throughout Melbourne.
+        </p>
+
+        <br>
+
+        <p>
+        📧 Email: mpautoelectrics@gmail.com
+        </p>
+
+        <p>
+        📍 Melbourne, Victoria, Australia
+        </p>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+    © 2026 MP Auto Mechanics. All Rights Reserved.
+    </p>
+
+    <br>
+
+    <p>
+    Professional Auto Electrical Services Across Melbourne
+    </p>
+
+    <br>
+
+    <p>
+
+        <a href="/privacy.html">
+        Privacy Policy
+        </a>
+
+        |
+
+        <a href="/contact.html">
+        Contact
+        </a>
+
+    </p>
+
+</footer>
+
+<script>
+
+function toggleMenu(){
+
+    document
+    .getElementById("mobileMenu")
+    .classList
+    .toggle("active");
+}
+
+</script>
+
+</body>
+</html>
