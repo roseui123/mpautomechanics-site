@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Google AdSense -->
+<script async
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2942881557430221"
+crossorigin="anonymous"></script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+MP Auto Mechanics | Auto Electrician Melbourne
+</title>
+
+<meta
+name="description"
+content="Professional auto electrician in Melbourne providing battery replacement, alternator repair, diagnostics, starter motor repair, wiring repair and mobile roadside assistance."
+>
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://mpautomechanics.com/">
+
+<link rel="icon" href="/favicon.ico?v=5">
+
+<meta name="theme-color" content="#ff4b4b">
+
+<!-- GOOGLE BUSINESS SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "MP Auto Mechanics",
+  "url": "https://mpautomechanics.com",
+  "image": "https://mpautomechanics.com/images/logo.jpg",
+  "telephone": "+61403345586",
+  "email": "mpautoelectrics@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Melbourne",
+    "addressRegion": "VIC",
+    "addressCountry": "AU"
+  },
+  "areaServed": "Melbourne",
+  "description":
+  "Mobile auto electrician in Melbourne specialising in diagnostics, battery replacement, alternator repair and wiring solutions."
+}
+</script>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    background:#ffffff;
+    color:#0f172a;
+    line-height:1.7;
+}
+
+@media (prefers-color-scheme: dark){
+
+    body{
+        background:#020617;
+        color:#e2e8f0;
+    }
+}
+
+/* NAVBAR */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:9999;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:12px 25px;
+
+    background:rgba(255,255,255,0.82);
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 5px 25px rgba(0,0,0,0.08);
+
+    border-radius:0 0 15px 15px;
+}
+
+@media (prefers-color-scheme: dark){
+
+    .navbar{
+        background:rgba(2,6,23,0.9);
+    }
+}
+
+.logo img{
+    width:55px;
+    border-radius:10px;
+}
+
+.nav-links a{
+    margin:0 10px;
+    text-decoration:none;
+    color:#0f172a;
+    font-weight:600;
+    padding:8px 14px;
+    border-radius:10px;
+    transition:0.3s ease;
+}
+
+.nav-links a:hover{
+    background:#ff4b4b;
+    color:white;
+}
+
+@media (prefers-color-scheme: dark){
+
+    .nav-links a{
+        color:#e2e8f0;
+    }
+}
+
+.nav-contact{
+    font-size:13px;
+    text-align:right;
+}
+
+@media (max-width:768px){
+
+    .nav-contact{
+        display:none;
+    }
+}
+
+/* MOBILE */
+
+.hamburger{
+    display:none;
+    flex-direction:column;
+    cursor:pointer;
+}
+
+.hamburger span{
+    width:25px;
+    height:3px;
+    background:#0f172a;
+    margin:4px;
+    border-radius:5px;
+}
+
+@media (prefers-color-scheme: dark){
+
+    .hamburger span{
+        background:white;
+    }
+}
+
+.mobile-menu{
+    position:fixed;
+    top:70px;
+    right:-100%;
+
+    width:220px;
+
+    background:rgba(255,255,255,0.96);
+    backdrop-filter:blur(12px);
+
+    padding:20px;
+
+    border-radius:15px 0 0 15px;
+
+    box-shadow:-5px 0 20px rgba(0,0,0,0.15);
+
+    transition:0.4s ease;
+
+    z-index:10000;
+}
+
+.mobile-menu.active{
+    right:0;
+}
+
+.mobile-menu a{
+    display:block;
+    margin:15px 0;
+    text-decoration:none;
+    font-weight:bold;
+    color:#0f172a;
+}
+
+@media (prefers-color-scheme: dark){
+
+    .mobile-menu{
+        background:rgba(2,6,23,0.95);
+    }
+
+    .mobile-menu a{
+        color:white;
+    }
+}
+
+@media (max-width:768px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hamburger{
+        display:flex;
+    }
+}
+
+/* HERO */
+
+.hero{
+    height:430px;
+
+    margin:20px;
+    border-radius:20px;
+
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+        to top,
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.15)
+    ),
+    url('/images/Banner_Car_image.png')
+    center/cover no-repeat;
+
+    display:flex;
+    align-items:center;
+
+    padding:40px;
+}
+
+.hero-text{
+    max-width:650px;
+    color:white;
+}
+
+.hero-text h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero-text p{
+    font-size:18px;
+    opacity:0.95;
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:14px 26px;
+
+    border-radius:12px;
+
+    background:#ff4b4b;
+    color:white;
+
+    text-decoration:none;
+    font-weight:bold;
+
+    transition:0.3s ease;
+}
+
+.btn:hover{
+    background:#e63939;
+    transform:translateY(-2px);
+}
+
+/* CONTENT */
+
+.container{
+    padding:30px;
+}
+
+.card{
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    transition:0.3s ease;
+}
+
+@media (prefers-color-scheme: dark){
+
+    .card{
+        background:#0f172a;
+    }
+}
+
+.images{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.images img{
+
+    width:100%;
+
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+
+    transition:0.3s ease;
+
+}
+
+.images img:hover{
+
+    transform:translateY(-3px);
+
+}
+
+iframe{
+    border-radius:15px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:40px;
+
+    background:rgba(255,255,255,0.82);
+
+    backdrop-filter:blur(10px);
+
+    border-top:1px solid rgba(0,0,0,0.08);
+}
+
+footer a{
+    color:#ff4b4b;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+@media (prefers-color-scheme: dark){
+
+    footer{
+        background:rgba(15,23,42,0.9);
+        border-top:1px solid #1e293b;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    .hero{
+        height:320px;
+        padding:25px;
+    }
+
+    .hero-text h1{
+        font-size:28px;
+    }
+
+    .hero-text p{
+        font-size:15px;
+    }
+
+    .container{
+        padding:15px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+
+    <div class="logo">
+        <a href="/">
+            <img
+            src="/images/logo.jpg"
+            alt="MP Auto Mechanics Logo">
+        </a>
+    </div>
+
+    <div class="nav-links">
+
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/services.html">Services</a>
+        <a href="/gallery.html">Gallery</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/profile.html">Profile</a>
+        <a href="/privacy.html">Privacy Policy</a>
+
+    </div>
+
+    <div class="nav-contact">
+
+        📧 mpautoelectrics@gmail.com
+        Contact Developer:
+            📧 malinimercy@ymail.com
+
+        <br>
+
+        Melbourne, Victoria
+
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+</div>
+
+<!-- MOBILE MENU -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/services.html">Services</a>
+    <a href="/gallery.html">Gallery</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/profile.html">Profile</a>
+    <a href="/privacy.html">Privacy Policy</a>
+
+</div>
+
+<!-- HERO -->
+
+<div class="hero" style="
+background:
+linear-gradient(
+to top,
+rgba(0,0,0,0.55),
+rgba(0,0,0,0.15)
+),
+url('/images/BreakRotorRepair.jpg')
+center/cover no-repeat;">
+  
+    <div class="hero-text">
+
+        <h1>
+          Brake Rotor Repair Case Study
+        </h1>
+
+
+        <p>
+          Brake rotor inspection and repair work completed by
+          MP Auto Mechanics in Melbourne.
+        </p>
+
+        <a href="/contact.html" class="btn">
+        Request Service
+        </a>
+
+    </div>
+
+</div>
+
+<!-- CONTENT -->
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>
+          Brake Rotor Repair and Inspection – Melbourne Case Study
+        </h2>
+
+        <p>
+          This repair involved diagnosing brake performance concerns
+          on a customer vehicle that had begun developing vibration
+          during braking. The customer reported that the steering wheel
+          would shake when slowing down from highway speeds and that
+          the braking performance no longer felt smooth.
+        </p>
+
+
+        <br>
+
+        <p>
+          Brake rotor issues are common on modern vehicles and can
+          develop gradually over time. Excessive heat, normal wear,
+          and uneven rotor surfaces can all contribute to braking
+          vibration and reduced braking comfort.
+        </p>
+
+
+    </div>
+
+    <br>
+  
+    <div class="card">
+      <h3>
+        Customer Complaint
+      </h3>
+      <p>
+        The customer contacted MP Auto Mechanics after noticing
+        several symptoms:
+      </p>
+      <ul style="padding-left:20px;">
+      <li>Steering wheel vibration during braking.</li>
+      <li>Pulsation felt through the brake pedal.</li>
+      <li>Reduced braking smoothness.</li>
+      <li>Increased stopping distance concerns.</li>
+      <li>Visible wear on brake components.</li>
+      </ul>
+      <p>
+        Because brake system performance directly affects vehicle
+        safety, a complete brake inspection was performed.
+      </p>
+    </div>
+  <div class="card">
+    <h3>
+      Initial Inspection
+    </h3>
+    <p>
+      The vehicle was safely raised and the wheel assemblies were
+      removed to gain full access to the braking system.
+    </p>
+    <p>
+      Visual inspection immediately revealed uneven wear patternson the brake rotor surface. 
+      Heat marks and surface scoringwere present, indicating that the rotor had experienced
+      extended wear.
+    </p>
+    <p>
+      Brake pads were also inspected to determine whether
+      additional components required servicing.
+    </p>
+    </div>
+
+<div class="card">
+
+<h3>
+Diagnostic Process
+</h3>
+
+<p>
+A systematic inspection process was completed to identify
+the exact cause of the braking concerns.
+</p>
+
+<ul style="padding-left:20px;">
+
+<li>Brake rotor surface condition inspected.</li>
+
+<li>Rotor wear measured.</li>
+
+<li>Brake pad thickness checked.</li>
+
+<li>Brake caliper operation verified.</li>
+
+<li>Brake fluid condition inspected.</li>
+
+<li>Wheel hub mounting surfaces checked.</li>
+
+<li>Suspension components visually inspected.</li>
+
+</ul>
+
+<p>
+The inspection confirmed that the brake rotor surface wear
+was contributing significantly to the vibration experienced
+during braking.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Repair Procedure
+</h3>
+
+<p>
+The braking system was serviced using professional repair
+procedures.
+</p>
+
+<p>
+The worn rotor assembly was removed and inspected in detail.
+All mating surfaces were cleaned and prepared to ensure
+proper component fitment.
+</p>
+
+<p>
+The brake pads, caliper hardware and surrounding components
+were also inspected while the braking system was
+disassembled.
+</p>
+
+<p>
+After repairs were completed, all components were carefully
+reassembled and checked according to manufacturer service
+requirements.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Results After Repair
+</h3>
+
+<p>
+Following completion of the repair, braking performance was
+significantly improved.
+</p>
+
+<ul style="padding-left:20px;">
+
+<li>Brake vibration eliminated.</li>
+
+<li>Smoother braking feel restored.</li>
+
+<li>Improved braking confidence.</li>
+
+<li>Reduced component noise.</li>
+
+<li>Improved overall driving comfort.</li>
+
+</ul>
+
+<p>
+The vehicle was road tested and confirmed to be operating
+correctly before being returned to the customer.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Common Signs of Brake Rotor Problems
+</h3>
+
+<p>
+Many drivers are unaware that brake rotor wear develops
+gradually. Common warning signs include:
+</p>
+
+<ul style="padding-left:20px;">
+
+<li>Steering wheel shake while braking.</li>
+
+<li>Brake pedal pulsation.</li>
+
+<li>Grinding or scraping noises.</li>
+
+<li>Uneven braking performance.</li>
+
+<li>Visible rotor grooves or scoring.</li>
+
+<li>Longer stopping distances.</li>
+
+</ul>
+
+<p>
+If these symptoms are ignored, further brake system damage
+can occur and repair costs may increase.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Why Brake Inspections Are Important
+</h3>
+
+<p>
+Routine brake inspections help identify problems before
+they become major safety concerns. Regular servicing allows
+worn components to be detected early and helps maintain
+optimal braking performance.
+</p>
+
+<p>
+At MP Auto Mechanics, every brake inspection includes a
+careful evaluation of rotor condition, brake pad wear,
+caliper operation and overall braking system performance.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Need Brake Repairs in Melbourne?
+</h3>
+
+<p>
+MP Auto Mechanics provides brake inspections, brake rotor
+repairs, brake servicing, diagnostics and auto electrical
+services throughout Melbourne.
+</p>
+
+<p>
+Whether your vehicle requires routine maintenance or
+advanced fault diagnosis, we can help.
+</p>
+
+<a href="/services.html" class="btn">
+View Services
+</a>
+
+<a href="/contact.html" class="btn" style="margin-left:10px;">
+Contact Us
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>
+About This Case Study
+</h3>
+
+<p>
+This case study is based on real brake repair work completed
+by MP Auto Mechanics in Melbourne. The images shown on this
+page are from actual vehicle servicing and repair work.
+</p>
+
+<p>
+Written by MP Auto Mechanics – Professional Automotive
+Diagnostics, Electrical Repairs and Vehicle Maintenance.
+</p>
+
+</div>
+
+</div>
+
+
+    
+    </div>
+
+    <div class="card">
+
+        <h3>
+        Business Information
+        </h3>
+
+        <p>
+        MP Auto Mechanics provides mobile auto electrical
+        diagnostics and repair services throughout Melbourne.
+        </p>
+
+        <br>
+
+        <p>
+        📧 Email: mpautoelectrics@gmail.com
+        </p>
+
+        <p>
+        📍 Melbourne, Victoria, Australia
+        </p>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+    © 2026 MP Auto Mechanics. All Rights Reserved.
+    </p>
+
+    <br>
+
+    <p>
+    Professional Auto Electrical Services Across Melbourne
+    </p>
+
+    <br>
+
+    <p>
+
+        <a href="/privacy.html">
+        Privacy Policy
+        </a>
+
+        |
+
+        <a href="/contact.html">
+        Contact
+        </a>
+
+    </p>
+
+</footer>
+
+<script>
+
+function toggleMenu(){
+
+    document
+    .getElementById("mobileMenu")
+    .classList
+    .toggle("active");
+}
+
+</script>
+
+</body>
+</html>
