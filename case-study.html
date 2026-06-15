@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Google AdSense -->
+<script async
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2942881557430221"
+crossorigin="anonymous"></script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+Case studies | MP Auto Mechanics Melbourne
+</title>
+
+<meta
+name="description"
+content="Professional auto Mechanic in Melbourne. Explore Real world case studies and learn how to diagnose cars. Learn the language of cars."
+>
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://mpautomechanics.com/case-study.html">
+
+<link rel="icon" href="/favicon.ico?v=5">
+
+<meta name="theme-color" content="#ff4b4b">
+
+<!-- GOOGLE BUSINESS SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "MP Auto Mechanics",
+  "url": "https://mpautomechanics.com",
+  "image": "https://mpautomechanics.com/images/logo.jpg",
+  "telephone": "+61403345586",
+  "email": "mpautoelectrics@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Melbourne",
+    "addressRegion": "VIC",
+    "addressCountry": "AU"
+  },
+  "areaServed": "Melbourne",
+  "description":
+  "Mobile auto electrician in Melbourne specialising in diagnostics, battery replacement, alternator repair and wiring solutions."
+}
+</script>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    background:#ffffff;
+    color:#0f172a;
+    line-height:1.7;
+}
+
+@media (prefers-color-scheme: dark){
+
+    body{
+        background:#020617;
+        color:#e2e8f0;
+    }
+}
+
+/* NAVBAR */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:9999;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:12px 25px;
+
+    background:rgba(255,255,255,0.82);
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 5px 25px rgba(0,0,0,0.08);
+
+    border-radius:0 0 15px 15px;
+}
+
+@media (prefers-color-scheme: dark){
+
+    .navbar{
+        background:rgba(2,6,23,0.9);
+    }
+}
+
+.logo img{
+    width:55px;
+    border-radius:10px;
+}
+
+.nav-links a{
+    margin:0 10px;
+    text-decoration:none;
+    color:#0f172a;
+    font-weight:600;
+    padding:8px 14px;
+    border-radius:10px;
+    transition:0.3s ease;
+}
+
+.nav-links a:hover{
+    background:#ff4b4b;
+    color:white;
+}
+
+@media (prefers-color-scheme: dark){
+
+    .nav-links a{
+        color:#e2e8f0;
+    }
+}
+
+.nav-contact{
+    font-size:13px;
+    text-align:right;
+}
+
+@media (max-width:768px){
+
+    .nav-contact{
+        display:none;
+    }
+}
+
+/* MOBILE */
+
+.hamburger{
+    display:none;
+    flex-direction:column;
+    cursor:pointer;
+}
+
+.hamburger span{
+    width:25px;
+    height:3px;
+    background:#0f172a;
+    margin:4px;
+    border-radius:5px;
+}
+
+@media (prefers-color-scheme: dark){
+
+    .hamburger span{
+        background:white;
+    }
+}
+
+.mobile-menu{
+    position:fixed;
+    top:70px;
+    right:-100%;
+
+    width:220px;
+
+    background:rgba(255,255,255,0.96);
+    backdrop-filter:blur(12px);
+
+    padding:20px;
+
+    border-radius:15px 0 0 15px;
+
+    box-shadow:-5px 0 20px rgba(0,0,0,0.15);
+
+    transition:0.4s ease;
+
+    z-index:10000;
+}
+
+.mobile-menu.active{
+    right:0;
+}
+
+.mobile-menu a{
+    display:block;
+    margin:15px 0;
+    text-decoration:none;
+    font-weight:bold;
+    color:#0f172a;
+}
+
+@media (prefers-color-scheme: dark){
+
+    .mobile-menu{
+        background:rgba(2,6,23,0.95);
+    }
+
+    .mobile-menu a{
+        color:white;
+    }
+}
+
+@media (max-width:768px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hamburger{
+        display:flex;
+    }
+}
+
+/* HERO */
+
+.hero{
+    height:430px;
+
+    margin:20px;
+    border-radius:20px;
+
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+        to top,
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.15)
+    ),
+    url('/images/Banner_Car_image.png')
+    center/cover no-repeat;
+
+    display:flex;
+    align-items:center;
+
+    padding:40px;
+}
+
+.hero-text{
+    max-width:650px;
+    color:white;
+}
+
+.hero-text h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero-text p{
+    font-size:18px;
+    opacity:0.95;
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:14px 26px;
+
+    border-radius:12px;
+
+    background:#ff4b4b;
+    color:white;
+
+    text-decoration:none;
+    font-weight:bold;
+
+    transition:0.3s ease;
+}
+
+.btn:hover{
+    background:#e63939;
+    transform:translateY(-2px);
+}
+
+/* CONTENT */
+
+.container{
+    padding:30px;
+}
+
+.card{
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    transition:0.3s ease;
+}
+
+@media (prefers-color-scheme: dark){
+
+    .card{
+        background:#0f172a;
+    }
+}
+
+.images{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.images img{
+
+    width:100%;
+
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+
+    transition:0.3s ease;
+
+}
+
+.images img:hover{
+
+    transform:translateY(-3px);
+
+}
+
+iframe{
+    border-radius:15px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:40px;
+
+    background:rgba(255,255,255,0.82);
+
+    backdrop-filter:blur(10px);
+
+    border-top:1px solid rgba(0,0,0,0.08);
+}
+
+footer a{
+    color:#ff4b4b;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+@media (prefers-color-scheme: dark){
+
+    footer{
+        background:rgba(15,23,42,0.9);
+        border-top:1px solid #1e293b;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    .hero{
+        height:320px;
+        padding:25px;
+    }
+
+    .hero-text h1{
+        font-size:28px;
+    }
+
+    .hero-text p{
+        font-size:15px;
+    }
+
+    .container{
+        padding:15px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+
+    <div class="logo">
+        <a href="/">
+            <img
+            src="/images/logo.jpg"
+            alt="MP Auto Mechanics Logo">
+        </a>
+    </div>
+
+    <div class="nav-links">
+
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/services.html">Services</a>
+        <a href="/gallery.html">Gallery</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/profile.html">Profile</a>
+        <a href="/privacy.html">Privacy Policy</a>
+
+    </div>
+
+    <div class="nav-contact">
+
+        📧 mpautoelectrics@gmail.com
+        Contact Developer:
+            📧 malinimercy@ymail.com
+
+        <br>
+
+        Melbourne, Victoria
+
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+</div>
+
+<!-- MOBILE MENU -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/services.html">Services</a>
+    <a href="/gallery.html">Gallery</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/profile.html">Profile</a>
+    <a href="/privacy.html">Privacy Policy</a>
+
+</div>
+
+<!-- HERO -->
+
+<div class="hero">
+
+    <div class="hero-text">
+
+        <h1>
+          Automotive Repair Case Studies Melbourne
+        </h1>
+      <p>
+        Explore real world vehicle repairs, diagnostics,
+        installations and maintenance work completed
+        by MP Auto Mechanics throughout Melbourne.
+      </p>
+      <a href="/contact.html" class="btn">
+        Request Service
+      </a>
+
+   </div>
+
+</div>
+
+    </div>
+
+</div>
+
+<!-- CONTENT -->
+
+<div class="container">
+
+<div class="card">
+
+<h2>
+Real Automotive Repair Case Studies
+</h2>
+
+<p>
+This page contains real-world repair,
+diagnostic and installation projects completed
+by MP Auto Mechanics. Each case study includes
+actual work performed, vehicle fault diagnosis,
+repair procedures and final outcomes.
+</p>
+
+<p>
+These case studies help customers understand
+the repair process and demonstrate the quality
+of workmanship provided throughout Melbourne.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>
+Brake Rotor Repair Case Study
+</h2>
+
+<p>
+Brake vibration diagnosis and brake rotor repair
+performed on a customer vehicle experiencing
+steering wheel shake during braking.
+</p>
+
+<a href="/case-studies/brake-rotor-repair-case-study.html" class="btn">
+Read Case Study
+</a>
+
+</div>
+
+<div class="card">
+
+<h2>
+Audi Brake Repair Case Study
+</h2>
+
+<p>
+Detailed brake system inspection and repair
+completed on an Audi vehicle experiencing
+reduced braking performance.
+</p>
+
+<a href="/case-studies/audi-brake-repair-case-study.html" class="btn">
+Read Case Study
+</a>
+
+</div>
+
+<div class="card">
+
+<h2>
+Mercedes Diagnostic Case Study
+</h2>
+
+<p>
+Advanced vehicle diagnostics performed to
+identify warning lights and system faults
+on a Mercedes-Benz vehicle.
+</p>
+
+<a href="/case-studies/mercedes-diagnosis-case-study.html" class="btn">
+Read Case Study
+</a>
+
+</div>
+
+<div class="card">
+
+<h2>
+Engine Repair Case Study
+</h2>
+
+<p>
+Engine fault diagnosis and repair completed
+to restore vehicle performance and reliability.
+</p>
+
+<a href="/case-studies/engine-repair-case-study.html" class="btn">
+Read Case Study
+</a>
+
+</div>
+
+<div class="card">
+
+<h2>
+Head Unit Installation Case Study
+</h2>
+
+<p>
+Professional head unit installation and
+infotainment upgrade performed on a customer
+vehicle.
+</p>
+
+<a href="/case-studies/head-unit-installation-case-study.html" class="btn">
+Read Case Study
+</a>
+
+</div>
+
+<div class="card">
+
+<h2>
+Dual Battery Installation Case Study
+</h2>
+
+<p>
+Dual battery system installation completed
+for improved accessory power management and
+off-road capability.
+</p>
+
+<a href="/case-studies/dual-battery-installation-case-study.html" class="btn">
+Read Case Study
+</a>
+
+</div>
+
+<div class="card">
+
+<h2>
+Dashcam & Spoiler Installation Case Study
+</h2>
+
+<p>
+Professional dashcam wiring and spoiler
+installation completed with concealed wiring
+and factory-style finish.
+</p>
+
+<a href="/case-studies/dashcam-spoiler-installation-case-study.html" class="btn">
+Read Case Study
+</a>
+
+</div>
+
+<div class="card">
+
+<h2>
+Vehicle Maintenance Case Study
+</h2>
+
+<p>
+Routine vehicle maintenance service including
+inspection, servicing and preventative repairs.
+</p>
+
+<a href="/case-studies/vehicle-maintenance-case-study.html" class="btn">
+Read Case Study
+</a>
+
+</div>
+
+<div class="card">
+
+<h2>
+Steering Control Repair Case Study
+</h2>
+
+<p>
+Diagnosis and repair of steering wheel control
+faults affecting audio and vehicle functions.
+</p>
+
+<a href="/case-studies/steering-control-repair-case-study.html" class="btn">
+Read Case Study
+</a>
+
+</div>
+
+<div class="card">
+
+<h2>
+Electrical Fault Diagnosis Case Study
+</h2>
+
+<p>
+Electrical system fault tracing and repair
+performed using professional diagnostic tools.
+</p>
+
+<a href="/case-studies/electrical-fault-diagnosis-case-study.html" class="btn">
+Read Case Study
+</a>
+
+</div>
+
+<div class="card">
+
+<h2>
+Auto Electrical Repair Case Study
+</h2>
+
+<p>
+General auto electrical repair involving
+wiring inspection, testing and fault diagnosis.
+</p>
+
+<a href="/case-studies/auto-electrical-repair-case-study.html" class="btn">
+Read Case Study
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>
+Need Professional Vehicle Repairs?
+</h3>
+
+<p>
+MP Auto Mechanics provides diagnostics,
+auto electrical repairs, brake repairs,
+vehicle maintenance and accessory installations
+throughout Melbourne.
+</p>
+
+<a href="/contact.html" class="btn">
+Contact Us
+</a>
+
+</div>
+
+</div>
+
+    <div class="card">
+
+        <h3>
+        Business Information
+        </h3>
+
+        <p>
+        MP Auto Mechanics provides mobile auto electrical
+        diagnostics and repair services throughout Melbourne.
+        </p>
+
+        <br>
+
+        <p>
+        📧 Email: mpautoelectrics@gmail.com
+        </p>
+
+        <p>
+        📍 Melbourne, Victoria, Australia
+        </p>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+    © 2026 MP Auto Mechanics. All Rights Reserved.
+    </p>
+
+    <br>
+
+    <p>
+    Professional Auto Electrical Services Across Melbourne
+    </p>
+
+    <br>
+
+    <p>
+
+        <a href="/privacy.html">
+        Privacy Policy
+        </a>
+
+        |
+
+        <a href="/contact.html">
+        Contact
+        </a>
+
+    </p>
+
+</footer>
+
+<script>
+
+function toggleMenu(){
+
+    document
+    .getElementById("mobileMenu")
+    .classList
+    .toggle("active");
+}
+
+</script>
+
+</body>
+</html>
